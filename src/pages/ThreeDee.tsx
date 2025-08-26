@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 const ThreeDee = () => {
+      useEffect(() => {
+        document.title = "JAKIDEKAPI | 3D";
+      },[]
+    );
+
     return (
         <div className="md:ml-10 md:mr-10
                         xs:ml-5 xs:mr-5

@@ -1,6 +1,14 @@
+import { useEffect } from "react";
+
 function Home () {
+  useEffect(() => {
+    document.title = "JAKIDEKAPI | Home";
+  },[]
+);
+
     return (
     <div className="font-display">
+
       <div className="xs:ml-5 xs:mr-5
                       sm:ml-5 sm:mr-5
                       md:ml-10 md:mr-10

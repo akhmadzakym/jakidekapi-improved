@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 const DigitalArt = () => {
+  useEffect(() => {
+    document.title = "JAKIDEKAPI | Digital Art";
+  },[]
+);
+
     return (
     // wish me luck semoga gridnya responsif
         <div className="md:ml-10 md:mr-10

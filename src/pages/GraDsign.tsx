@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 const GraDsign = () => {
+    useEffect(() => {
+        document.title = "JAKIDEKAPI | Graphic Design";
+      },[]
+    );
+
     return (
         <div className="md:ml-10 md:mr-10
                         xs:ml-5 xs:mr-5

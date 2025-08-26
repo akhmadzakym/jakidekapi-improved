@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 const About = () => {
+      useEffect(() => {
+        document.title = "JAKIDEKAPI | About";
+      },[]
+    );
+
     return (
     <div className="xs:ml-5 xs:mr-5 sm:ml-5 sm:mr-5 md:ml-10 md:mr-10 lg:ml-10 lg:mr-10 grid lg:grid-cols-2 gap-10 sm:grid-cols-1 md:grid-cols-2">
         <div>

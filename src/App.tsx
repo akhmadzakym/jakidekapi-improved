@@ -41,7 +41,6 @@ import Disco from "./pages/Disco";
 import Video from "./pages/Video";
 import About from "./pages/About";
 
-
 function App() {
   return (
     <Router>
