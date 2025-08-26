@@ -2,7 +2,7 @@ const About = () => {
     return (
     <div className="xs:ml-5 xs:mr-5 sm:ml-5 sm:mr-5 md:ml-10 md:mr-10 lg:ml-10 lg:mr-10 grid lg:grid-cols-2 gap-10 sm:grid-cols-1 md:grid-cols-2">
         <div>
-            <img className="rounded-2xl" src="assets/myself/steve_jobs_from_ohio.gif"></img>
+            <img className="rounded-2xl" src="/photos/myself/steve_jobs_from_ohio.gif"></img>
             <p className="text-xs mt-3 text-ctp-subtext0">Photo by Hernowo</p>
         </div>
 
@@ -14,7 +14,7 @@ const About = () => {
         </div>
 
          <div className="sm:block lg:hidden md:hidden">
-            <img className="rounded-2xl" src="assets/myself/steve_jobs_from_ohio1.gif"></img>
+            <img className="rounded-2xl" src="/photos/myself/steve_jobs_from_ohio1.gif"></img>
             <p className="text-xs mt-3 text-ctp-subtext0 lg:text-right md:text-left sm:text-left">Photo by Hernowo</p>
         </div>
 
@@ -25,7 +25,7 @@ const About = () => {
         </div>
 
          <div className="xs:hidden sm:hidden md:block lg:block">
-            <img className="rounded-2xl" src="assets/myself/steve_jobs_from_ohio1.gif"></img>
+            <img className="rounded-2xl" src="/photos/myself/steve_jobs_from_ohio1.gif"></img>
             <p className="text-xs mt-3 text-ctp-subtext0 lg:text-right md:text-left sm:text-left">Photo by Hernowo</p>
         </div>
     </div>
