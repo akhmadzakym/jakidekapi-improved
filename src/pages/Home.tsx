@@ -19,7 +19,7 @@ function Home () {
 
         </div>
         <div>
-            <img className="rounded-2xl" src="src/assets/myself/steve_jobs_from_ohio.gif"></img>
+            <img className="rounded-2xl" src="./assets/myself/steve_jobs_from_ohio.gif"></img>
         </div>
       </div>
     </div>

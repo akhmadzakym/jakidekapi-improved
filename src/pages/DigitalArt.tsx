@@ -2,7 +2,7 @@ const DigitalArt = () => {
     return (
     // wish me luck semoga gridnya responsif
         <div className="ml-10 mr-10 columns-1 gap-3 sm:columns-2 md:columns-3 lg:columns-3 [&>img:not(:first-child)]:mt-3">   
-                <img className="rounded-2xl" src="assets/digita/spcbi.gif"></img>
+                <img className="rounded-2xl" src="./assets/digita/spcbi.gif"></img>
                 <img className="rounded-2xl" src="assets/digita/kle.gif"></img>
                 <img className="rounded-2xl" src="assets/digita/selfport.gif"></img>
                 <img className="rounded-2xl" src="assets/digita/export202401081434415690.gif"></img>
