@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en" class="font-display">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--INI HARUS SIH KARENA BIAR RESPONSIF AJA (KATANYA)-->
+    <link rel="stylesheet" href="./style.css">
+    <title>JAKIDEKAPI | Home</title>
+  </head>
+
+    <!--
+    ===NOTICE===
+    
+    UNTUK LAYAR KOMPUTER = M-20
+    UNTUK LAYAR TABLET/IPAD SEGALA MACEM = M-20
+    UNTUK LAYAR KECIL KAYAK HP = M-5
+  -->
+
+  <body class="bg-ctp-mantle text-ctp-text">
+    <div class="navbar flex flex-row mt-5 mb-20 mr-10 ml-10 gap-5"> <!--Margin Right-->
+      <a href="index.html" class="text-3xl font-bold">jakidekapi.net</a>
+      <a href="digitalart.html" class="font-light transition ease-in-out hover:text-3xl hover:font-bold">digital</a>
+      <a href="traditionalart.html" class="font-light transition duration-300 ease-in-out hover:text-3xl hover:font-bold">traditional</a>
+      <a href="graphic.html" class="font-light transition duration-300 ease-in-out hover:text-3xl hover:font-bold">graphic design</a>
+      <a href="threedee.html" class="font-light transition duration-300 ease-in-out hover:text-3xl hover:font-bold">3D</a>
+      <a href="photography.html" class="font-light transition duration-300 ease-in-out hover:text-3xl hover:font-bold">photography</a>
+      <a href="discography.html" class="font-light transition duration-300 ease-in-out hover:text-3xl hover:font-bold">discography</a>
+      <a href="video.html" class="font-light transition duration-300 ease-in-out hover:text-3xl hover:font-bold">video</a>
+      <a href="about.html" class="font-light transition duration-300 ease-in-out hover:text-3xl hover:font-bold">about</a>
+    </div>
+
+
+    <!-- 
+
+    Catatan:
+
+    Kayaknya untuk UI modile hrus buat div baru karena kalo digabung
+    sama div yang untuk ui desktop, grid nya jadi 4, bukan 2.
+
+    Bisa Dicoba:
+
+    div untuk UI desktop (XL, LG, MD) di-set dispaly nya jadi 'hidden'
+    (kalo di CSS itu display: none;), dan div UI mobile (SM, XS) di-set jadi
+    'block'.    
+
+    -->
+    <div class="xs:ml-5 xs:mr-5 sm:ml-5 sm:mr-5 md:ml-10 md:mr-10 lg:ml-10 lg:mr-10 lg:grid-cols-2 md:grid-cols-2 gap-5 welcome">
+        <div class="content-center">
+          <h1 class="text-7xl font-bold leading-21">Hello, I'm <br>Akhmad Zaky Maulana</h1>
+          <h1 class="text-5xl font-light">and this is my portfolio.</h1>
+          <p class="leading-15 text-2xl">I'm an artist, musician, photographer, and a student.</p>
+          <br>
+          <button class="font-bold bg-ctp-text text-ctp-mantle pt-5 pb-5 pl-7 pr-7 rounded-2xl transition hover:bg-ctp-mantle hover:text-ctp-text text-2xl">About Me -></button>
+        </div>
+
+        <div>
+          <img class="rounded-3xl" src="./6.png">
+        </div>
+    </div>
+
+    <div>
+        <center><p class="text-ctp-subtext1 m-5">Coyright &copy; 2025 Akhmad Zaky Maulana. </p></center>
+    </div>
+  </body>
+</html>
+
+<!--
+
+Oh iya, alasan saya buat ulang website nya karena website sebelumnya itu dibuatnya *manual*. Maksudnya?
+Jadi, pas pertama buat website *JAKIDEKAPI*, itu saya nggak pake kayak Tailwind CSS, Bootstrap, React, Next.JS dll. SEMUANYA MANUAL. Beneran.
+Alhasil, websitenya masih kelihatan berantakan.
+
+Nah, untuk sekarang, saya memutuskan untuk me-remake website nya jadi lebih responsif dan nggak berantakan...
+
+BTW, saya pake Tailwind CSS. Rencananya sih pake React entar.
+
+Ya, sepertinya gitu aja. Dah.
+
+-jaki, senin 25 agustus 2025 14:07:40 WIB
+
+-->
