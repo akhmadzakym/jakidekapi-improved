@@ -58,8 +58,14 @@ function App() {
             <Route path='/video' element={<Video />} />
             <Route path='/about' element={<About />} />
           </Routes>
+
+          <div>
+            <center><p className="text-ctp-subtext1 m-5">Coyright &copy; 2025 Akhmad Zaky Maulana. </p></center>
+          </div>
+
       </div>
     </Router>
+
   );
 }
 

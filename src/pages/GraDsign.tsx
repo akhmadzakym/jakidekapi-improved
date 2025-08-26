@@ -1,6 +1,10 @@
 const GraDsign = () => {
     return (
-        <div className="ml-10 mr-10 columns-1 gap-3 sm:columns-2 md:columns-3 lg:columns-3 [&>img:not(:first-child)]:mt-3">   
+        <div className="md:ml-10 md:mr-10
+                        xs:ml-5 xs:mr-5
+                        columns-1 gap-3
+                        sm:columns-2 md:columns-3 lg:columns-3
+                        [&>img:not(:first-child)]:mt-3">   
                 <img className="rounded-2xl" src="/photos/gradsign/AE_SIGN_POSTER.gif"></img>
                 <img className="rounded-2xl" src="/photos/gradsign/AE_PLUS_POSTER.gif"></img>
                 <img className="rounded-2xl" src="/photos/gradsign/it's-music-to-my-ears.gif"></img>
