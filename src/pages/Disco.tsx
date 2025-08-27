@@ -7,8 +7,8 @@ const Disco = () => {
     );
 
     return (
-    <><p className="mr-10 ml-10 mb-20 text-5xl">My music is only available on <a className="decoration-2 font-bold" href="https://broktin.bandcamp.com/">Bandcamp</a> only. Please support me, I'm struggling :3</p><div className="ml-10 mr-10 flex flex-row flex-wrap gap-3">
-
+    <><div className="xs:ml-5 xs:mr-5 md:ml-10 md:mr-10 flex flex-row flex-wrap gap-3">
+        <p className="md:text-5xl xs:text-3xl mb-5">My music is only available on <a className="decoration-2 underline font-bold" href="https://broktin.bandcamp.com/">Bandcamp</a> only. Please support me, I'm struggling :3</p>
             <iframe style={{ border: 0, width: "350px", height: "350px" }} src="https://bandcamp.com/EmbeddedPlayer/album=4195841262/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/" seamless><a href="https://broktin.bandcamp.com/album/the-eternal-dancer">The Eternal Dancer by Akhmad Zaky Maulana</a></iframe>
             <iframe style={{ border: 0, width: "350px", height: "350px" }} src="https://bandcamp.com/EmbeddedPlayer/album=1651332226/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://broktin.bandcamp.com/album/manifold-chapter-1-outsider">MANIFOLD Chapter 1 : Outsider by broktin</a></iframe>
             <iframe style={{ border: 0, width: "350px", height: "350px" }} src="https://bandcamp.com/EmbeddedPlayer/album=1830780947/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://broktin.bandcamp.com/album/dilapidated-mind">Dilapidated Mind by broktin</a></iframe>
