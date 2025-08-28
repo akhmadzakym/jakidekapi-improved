@@ -44,7 +44,7 @@ const NavBar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.15 }}
-                className="absolute top-16 left-0 w-full bg-ctp-mantle flex flex-col items-center gap-4 py-4 md:hidden">
+                className="absolute top-16 left-0 w-full bg-ctp-mantle flex flex-col items-center gap-4 py-4 z-50 md:hidden">
             <Link to="/digital" onClick={toggleMenu}>digital</Link>
             <Link to="/traditional" onClick={toggleMenu}>traditional</Link>
             <Link to="/graphic" onClick={toggleMenu}>graphic design</Link>
