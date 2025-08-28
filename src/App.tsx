@@ -30,6 +30,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 import Home from "./pages/Home"
 import DigitalArt from "./pages/DigitalArt";
@@ -57,15 +58,9 @@ function App() {
             <Route path='/video' element={<Video />} />
             <Route path='/about' element={<About />} />
           </Routes>
-
-          {/* TODO: Ukuran teks kecil (bila di mobile) */}
-          <div>
-            <center><p className="max-sm:text-xs md:text-xs text-ctp-subtext1 m-5">Coyright &copy; 2025 Akhmad Zaky Maulana. </p></center>
-          </div>
-
       </div>
+        <Footer />
     </Router>
-
   );
 }
 
