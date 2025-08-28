@@ -1,9 +1,12 @@
 import { useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 const TradArt = () => {
+    const { t } =  useLanguage();
+
       useEffect(() => {
-        document.title = "JAKIDEKAPI | Traditional Art";
-      },[]
+        document.title = t("title.traditional");
+      },[t]
     );
     
     return (

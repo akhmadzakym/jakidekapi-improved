@@ -1,10 +1,14 @@
 import { useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 const Photo = () => {
+    const { t } =  useLanguage();
+
       useEffect(() => {
-        document.title = "JAKIDEKAPI | Photography";
-      },[]
+        document.title = t("title.photography");
+      },[t]
     );
+
 
     return (
         <div className="max-sm:ml-5 max-sm:mr-5

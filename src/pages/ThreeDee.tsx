@@ -1,9 +1,12 @@
 import { useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 const ThreeDee = () => {
+    const { t } =  useLanguage();
+
       useEffect(() => {
-        document.title = "JAKIDEKAPI | 3D";
-      },[]
+        document.title = t("title.3D");
+      },[t]
     );
 
     return (

@@ -1,0 +1,53 @@
+{
+    "title":{
+        "home": "JAKIDEKAPI | beranda",
+        "digital": "JAKIDEKAPI | digital",
+        "traditional": "JAKIDEKAPI | non digital",
+        "graphic_design": "JAKIDEKAPI | desain grafis",
+        "3D": "JAKIDEKAPI | 3D",
+        "photography": "JAKIEKAPI | fotografi",
+        "music": "JAKIDEKAPI | musik",
+        "video": "JAKIDEKAPI | video",
+        "about": "JAKIDEKAPI | tentang"
+    },
+
+    "navbar": {
+        "digital": "digital",
+        "traditional": "non digital",
+        "graphic_design": "desain grafis",
+        "3D": "3D",
+        "photography": "fotografi",
+        "music": "musik",
+        "video": "video",
+        "about": "tentang"
+    },
+
+    "home": {
+        "title": "Halo, aku",
+        "titlelanjutan": "Akhmad Zaky Maulana",
+
+        "subtitle": "dan ini adalah portofolio ku.",
+        "content": "Aku adalah seniman, musisi, fotografer, dan siswa di SMK Al-Muhtadin.",
+
+        "button": "Tentang ku ->"
+    },
+    
+    "disco": {
+        "title": "Musikku adanya di Bandcamp saja. Tolong support aku, karena aku kesusahan dan butuh uang :3"
+    },
+
+    "about": {
+        "title1": "Tentang",
+        "paragraph1": "Akhmad Zaky Maulana, lahir pada tahun 2008, adalah seniman, musisi, dan fotografer yang tinggal di Bekasi. Dia adalah siswa di SMK Al-Muhtadin mengambil jurusan Desain Komunikasi Visual.",
+        "paragraph2": "Kadang dia mengunci dirinya di kamarnya tiap hari untuk menciptakan sebuah mahakarya yang dia harap orang-orang akan menyukainya. Seni menjadi minat dia saat ia berumur 11 tahun. Semuanya berawal dari proyek kecil yang ia kerjakan, yaitu membuat avatar Minecraft. Alasan kenapa dia memutuskan untuk 'mengambil' seni karena temannya yang bisa menggambar.",
+        "paragraph3": "Untuk proyek musik, dia menggunakan macam-macam psudeonym (nama panggung/julukan) seperti 'user12052008', 'Failed Human Being', dan 'broktin' tergantung genre apa yang ingin dia kerjakan. Yang sekarang dia gunakan itu 'broktin'. Dia mempunyai rasa tekad yang tinggi untuk membuat musik elektronik.",
+
+        "paragraph4": "Dia mulai bereksperimen, membuat, dan merekam musik pada umur 14 tahun, karena sangat sekali terinspirasi oleh musisi elektronik yang bernama Richard David James atau bisa disebut Aphex Twin. Akhmad Zaky Maulana juga terinspirasi dengan musisi-musisi lainnya seperti Squarepusher, Autechre, Imaginary Softwoods, and Steve Hauschildt.",
+        "paragraph5": "Fotografi juga hal yang dia lakukan selain membuat musik. Dia tidak mempunyai kamera digital. Maka dari itu dia memotret dengan ponsel pribadi. Apabila yang dia lihat menarik, dia akan memotretnya. Pantas saja hard disk dia selalu penuh dengan foto-foto. Langit, awan, rumput ilalang, dan sinar matahari adalah subjek yang menarik untuk dipotret. Karena menurut dia 'menunjukkan sisi tenang di Bumi ini'.",
+        "paragraph6": "Selain seni dan musik, dia juga tertarik dengan 'komputer' dan programming. Programming menjadi minat dia karena pandemi COVID-19. Dia tidak tahu apa yang dia ingin lakukan selain menyelesaikan tugas sekolah online nya. Dia belajar HTML karena terlihat mudah untuk dipelajari. Proyek HTML pertama dia hanya biografi dia sendiri dengan desain CSS yang sangat jelek. Sampai sekarang, HTML menjadi berguna untuk dia karena ia bisa menunjukkan karya dia melalui website yang ia program.",
+
+        "title2": "Credits",
+
+        "credits": "Photo by Hernowo"
+    }
+}

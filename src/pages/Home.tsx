@@ -1,10 +1,16 @@
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 function Home () {
-  useEffect(() => {
-    document.title = "JAKIDEKAPI | Home";
-  },[]
-);
+    const { t } =  useLanguage();
+
+      useEffect(() => {
+        document.title = t("title.home");
+      },[t]
+    );
+
+
 
     return (
     <div className="font-display">
@@ -22,21 +28,22 @@ function Home () {
                
         <div className="content-center">
           <h1 className="lg:text-7xl md:text-7xl sm:text-6xl xs:text-5xl max-sm:text-3xl font-bold">
-            Hello, I'm <br /> Akhmad Zaky Maulana
+            {t("home.title")}<br></br> {t("home.titlelanjutan")}
           </h1><br />
           
-          <h2 className="lg:text-5xl md:text-5xl sm:text-4xl xs:text-4xl max-sm:text-2xl font-light">and this is my portfolio.</h2><br />
+          <h2 className="lg:text-5xl md:text-5xl sm:text-4xl xs:text-4xl max-sm:text-2xl font-light">{t("home.subtitle")}</h2><br />
           <p className="text-2xl">
-            I'm an artist, musician, photographer, and a student.
+            {t("home.content")}
           </p>
-          <br />
+          <br /><br />          
 
-          <button className="font-bold bg-ctp-text text-ctp-mantle
-                              md:pt-5 md:pb-5 md:pl-7 md:pr-7 max-sm:pt-4 max-sm:pb-4 max-sm:pl-7 max-sm:pr-7
-                              rounded-2xl
-                              transition hover:bg-ctp-mantle hover:text-ctp-text md:text-2xl max-sm:text-lg">
-            About Me -{'>'}
-          </button>
+        <Link to="/about" className="font-bold bg-ctp-text text-ctp-mantle
+                                     md:pt-5 md:pb-5 md:pl-7 md:pr-7 max-sm:pt-4 max-sm:pb-4 max-sm:pl-7 max-sm:pr-7
+                                     rounded-2xl
+                                     transition hover:bg-ctp-mantle hover:text-ctp-text md:text-2xl max-sm:text-lg">
+          {t("home.button")}
+          </Link>
+
 
         </div>
         <div className="max-sm:hidden xs:hidden sm:hidden md:block lg:block">

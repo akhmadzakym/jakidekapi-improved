@@ -36,11 +36,7 @@
 // IT FEELS LIKE I'M A PIECE OF SHIT
 
 import { useEffect } from "react";
-
-const Disco = () => {
-  useEffect(() => {
-    document.title = "JAKIDEKAPI | Discography";
-  }, []);
+import { useLanguage } from "../context/LanguageContext";
 
   // list of Bandcamp embed URLs (easier to maintain)
   const embeds = [
@@ -54,20 +50,17 @@ const Disco = () => {
     "https://bandcamp.com/EmbeddedPlayer/album=670240320/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/",
   ];
 
+const Disco = () => {
+    const { t } =  useLanguage();
+
+      useEffect(() => {
+        document.title = t("title.music");
+      },[t]
+    );
+
   return (
     <div className="max-sm:mx-5 xs:mx-5 md:mx-10">
-      <p className="md:text-5xl xs:text-3xl mb-5">
-        My music is only available on{" "}
-        <a
-          className="decoration-2 underline font-bold"
-          href="https://broktin.bandcamp.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Bandcamp
-        </a>{" "}
-        only. Please support me, I'm struggling :3
-      </p>
+      <p className="md:text-5xl xs:text-3xl mb-5">{t("disco.title")}</p>
 
       {/* Responsive Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">

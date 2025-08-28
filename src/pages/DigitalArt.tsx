@@ -1,10 +1,13 @@
 import { useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 const DigitalArt = () => {
-  useEffect(() => {
-    document.title = "JAKIDEKAPI | Digital Art";
-  },[]
-);
+    const { t } =  useLanguage();
+
+      useEffect(() => {
+        document.title = t("title.digital");
+      },[t]
+    );
 
     return (
     // wish me luck semoga gridnya responsif

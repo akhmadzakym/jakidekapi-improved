@@ -1,9 +1,12 @@
 import { useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 const GraDsign = () => {
-    useEffect(() => {
-        document.title = "JAKIDEKAPI | Graphic Design";
-      },[]
+    const { t } =  useLanguage();
+
+      useEffect(() => {
+        document.title = t("title.graphic_design");
+      },[t]
     );
 
     return (

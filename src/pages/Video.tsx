@@ -1,9 +1,13 @@
 import { useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 const Video = () => {
-  useEffect(() => {
-    document.title = "JAKIDEKAPI | Video";
-  }, []);
+    const { t } =  useLanguage();
+
+      useEffect(() => {
+        document.title = t("title.video");
+      },[t]
+    );
 
   const videos = [
     { id: "CWHXb7S4AHw", title: "Man" },
