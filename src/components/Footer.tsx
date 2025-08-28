@@ -15,9 +15,9 @@ const Footer = () => {
       <div className="flex flex-row px-5 my-5 items-center justify-between">
         <ul className="grid gap-2 text-sm">
             <li className="md:text-2xl max-sm:text-base font-bold">My Socials</li>
-            <li>Instagram</li>
-            <li>Bluesky</li>
-            <li>Bandcamp</li>
+            <li className="underline"><a href="https://www.instagram.com/jakidekapi/">Instagram</a></li>
+            <li className="underline"><a href="https://bsky.app/profile/broktin.bsky.social">Bluesky</a></li>
+            <li className="underline"><a href="https://broktin.bandcamp.com">Bandcamp</a></li>
         </ul>
 
         <div className="self-start">
