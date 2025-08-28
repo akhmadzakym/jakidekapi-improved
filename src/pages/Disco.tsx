@@ -55,7 +55,7 @@ const Disco = () => {
   ];
 
   return (
-    <div className="xs:mx-5 md:mx-10">
+    <div className="max-sm:mx-5 xs:mx-5 md:mx-10">
       <p className="md:text-5xl xs:text-3xl mb-5">
         My music is only available on{" "}
         <a

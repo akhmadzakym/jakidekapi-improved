@@ -58,8 +58,9 @@ function App() {
             <Route path='/about' element={<About />} />
           </Routes>
 
+          {/* TODO: Ukuran teks kecil (bila di mobile) */}
           <div>
-            <center><p className="text-ctp-subtext1 m-5">Coyright &copy; 2025 Akhmad Zaky Maulana. </p></center>
+            <center><p className="max-sm:text-xs md:text-xs text-ctp-subtext1 m-5">Coyright &copy; 2025 Akhmad Zaky Maulana. </p></center>
           </div>
 
       </div>

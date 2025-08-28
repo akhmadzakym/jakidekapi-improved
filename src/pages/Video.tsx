@@ -11,7 +11,7 @@ const Video = () => {
   ];
 
   return (
-    <div className="md:mx-10 xs:mx-5 flex flex-col gap-6">
+    <div className="max-sm:mx-5 md:mx-10 xs:mx-5 flex flex-col gap-6">
       {videos.map((video, idx) => (
         <div key={idx} className="relative w-full aspect-video overflow-hidden">
           <iframe

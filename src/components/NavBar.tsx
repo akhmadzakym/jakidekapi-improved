@@ -10,7 +10,8 @@ const NavBar = () => {
   return (
     <nav className="flex items-center justify-between 
                     md:mt-5 md:mb-10 md:mx-10
-                    xs:mt-5 xs:mb-10 xs:mx-5">
+                    xs:mt-5 xs:mb-10 xs:mx-5
+                    max-sm:mt-5 max-sm:mb-10 max-sm:mx-5">
       {/* Logo */}
       <Link to="/" className="text-3xl font-bold">
         jakidekapi.net

@@ -7,7 +7,8 @@ const Photo = () => {
     );
 
     return (
-        <div className="md:ml-10 md:mr-10
+        <div className="max-sm:ml-5 max-sm:mr-5
+                        md:ml-10 md:mr-10
                         xs:ml-5 xs:mr-5
                         columns-1 gap-3
                         sm:columns-2 md:columns-3 lg:columns-3
