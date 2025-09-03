@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container flex flex-col md:flex-row items-center justify-between gap-4 px-5">
 
         <p className="md:text-sm max-sm:text-xs">
-          © {new Date().getFullYear()} Akhmad Zaky Maulana. All rights reserved.
+          © 2023 - {new Date().getFullYear()} Akhmad Zaky Maulana. All rights reserved.
         </p>
 
         <p className="text-sm italic">Made using React & Tailwind :3</p>
