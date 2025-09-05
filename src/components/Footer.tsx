@@ -3,7 +3,7 @@ import LangSwitcher from "./LangSwitch";
 const Footer = () => {
   return (
     <footer className="bg-ctp-crust text-ctp-subtext1 py-5 md:px-20 max-sm:px-3 md:mt-17 max-sm:mt-41 border-t-2 font-display">
-      <div className="container flex flex-col md:flex-row items-center justify-between gap-4 px-5">
+      <div className=" flex flex-col md:flex-row justify-between gap-4 px-5">
 
         <p className="md:text-sm max-sm:text-xs">
           © 2023 - {new Date().getFullYear()} Akhmad Zaky Maulana. All rights reserved.

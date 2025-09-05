@@ -40,15 +40,16 @@ import { useLanguage } from "../context/LanguageContext";
 
   // list of Bandcamp embed URLs (easier to maintain)
   const embeds = [
-    "https://bandcamp.com/EmbeddedPlayer/album=4195841262/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/album=1651332226/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/",
+    "https://bandcamp.com/EmbeddedPlayer/album=355229537/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/",
+    "https://bandcamp.com/EmbeddedPlayer/album=4195841262/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/album=1830780947/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/album=4206725470/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/track=2282741513/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/track=735872634/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/album=375130663/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/album=670240320/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/",
-  ];
+    ];
 
 const Disco = () => {
     const { t } =  useLanguage();

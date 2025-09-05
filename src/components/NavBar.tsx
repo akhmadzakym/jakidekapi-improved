@@ -18,7 +18,7 @@ const NavBar = () => {
                     max-sm:mt-5 max-sm:mb-10 max-sm:mx-5">
       {/* entar ganti logo deh di sini */}
       <Link to="/" className="text-3xl font-bold">
-        jakidekapi.net
+        jakidekapi
       </Link>
 
       {/* Desktop Links */}
