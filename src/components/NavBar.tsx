@@ -17,8 +17,8 @@ const NavBar = () => {
                     xs:mt-5 xs:mb-10 xs:mx-5
                     max-sm:mt-5 max-sm:mb-10 max-sm:mx-5">
       {/* entar ganti logo deh di sini */}
-      <Link to="/" className="text-3xl font-bold">
-        jakidekapi
+      <Link to="/" className="w-35">
+        <img src="/svg/jakidekapi_2025.svg"></img>
       </Link>
 
       {/* Desktop Links */}

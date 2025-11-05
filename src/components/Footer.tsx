@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
 
         <div className="md:mt-20 md:mb-10 max-sm:mt-10 px-5">
-            <img src="/svg/jakidekapi_text_only.svg"></img>
+            <img src="/svg/jakidekapi_2025.svg"></img>
         </div>
 
 
