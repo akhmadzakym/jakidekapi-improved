@@ -25,6 +25,8 @@ const DigitalArt = () => {
                 <img className="rounded-2xl" src="/photos/digita/idkbro.gif"></img>
                 <img className="rounded-2xl" src="/photos/digita/strboenstr2.gif"></img>
                 <img className="rounded-2xl" src="/photos/digita/ikari.gif"></img>
+                <img className="rounded-2xl" src="/photos/digita/cat_resized.gif"></img>
+                <img className="rounded-2xl" src="/photos/digita/FROG_RESIZED.gif"></img>
                 <img className="rounded-2xl" src="/photos/digita/untitled-something.gif"></img>
                 <img className="rounded-2xl" src="/photos/digita/Untitled189.gif"></img>
                 <img className="rounded-2xl" src="/photos/digita/Untitled190.gif"></img>
