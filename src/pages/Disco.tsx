@@ -38,6 +38,8 @@
 import { useEffect } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
+import PageTransition from "../components/PageTransition";
+
   // list of Bandcamp embed URLs (easier to maintain)
   const embeds = [
     "https://bandcamp.com/EmbeddedPlayer/album=1651332226/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/",
@@ -60,6 +62,7 @@ const Disco = () => {
     );
 
   return (
+    <PageTransition>
     <div className="max-sm:mx-5 xs:mx-5 md:mx-10">
       <p className="md:text-5xl xs:text-3xl mb-5">{t("disco.title")}</p>
 
@@ -79,6 +82,7 @@ const Disco = () => {
         ))}
       </div>
     </div>
+    </PageTransition>
   );
 };
 

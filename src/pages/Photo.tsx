@@ -3,6 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { useState } from "react";
 
 import ImageModal from "../components/ImageModal";
+import PageTransition from "../components/PageTransition";
 
 const Photo = () => {
   const { t } = useLanguage();
@@ -151,6 +152,7 @@ const Photo = () => {
 
 
   return (
+    <PageTransition>
     <div>
       <h1 className="text-5xl text-center max-sm:ml-5 mt-10 mb-10 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5">Using DSLR</h1>
       <div className="max-sm:ml-5 max-sm:mr-5
@@ -183,25 +185,9 @@ const Photo = () => {
         {modalData && (
           <ImageModal src={modalData.src} caption={modalData.caption} onClose={() => setModalData(null)} />
         )}
-
-
-        {/*
-        <img className="rounded-2xl" src="/photos/photograp/20230122_123917.gif"></img>
-        <img className="rounded-2xl" src="/photos/photograp/LRM_20230718_161920.gif"></img>
-        <img className="rounded-2xl" src="/photos/photograp/LRM_20230718_162037-(1).gif"></img>
-        <img className="rounded-2xl" src="/photos/photograp/LRM_20230718_162048-(1).gif"></img>
-        <img className="rounded-2xl" src="/photos/photograp/20250103_070841.gif"></img>
-        <img className="rounded-2xl" src="/photos/photograp/20250103_070926.gif"></img>
-        <img className="rounded-2xl" src="/photos/photograp/20250103_074422.gif"></img>
-        <img className="rounded-2xl" src="/photos/photograp/20250103_070015.gif"></img>
-        <img className="rounded-2xl" src="/photos/photograp/20221028_190445.gif"></img>
-        <img className="rounded-2xl" src="/photos/photograp/20221120_054028.gif"></img>
-        <img className="rounded-2xl" src="/photos/photograp/mtmerapi.gif"></img>
-        <img className="rounded-2xl" src="/photos/photograp/pemecahombak.gif"></img>
-        */}
       </div>
     </div>
-
+    </PageTransition>
   );
 }
 

@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
+import PageTransition from "../components/PageTransition";
+
 const About = () => {
   const { t } = useLanguage();
 
@@ -9,8 +11,8 @@ const About = () => {
   }, [t]
   );
 
-
   return (
+    <PageTransition>
     <div className="max-sm:ml-5 max-sm:mr-5
                     xs:ml-5 xs:mr-5
                     sm:ml-5 sm:mr-5
@@ -59,6 +61,7 @@ const About = () => {
         <p>Hernowo</p>
       </div>
     </div>
+    </PageTransition>
   );
 }
 

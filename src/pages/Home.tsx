@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
+import PageTransition from "../components/PageTransition";
+
 function Home() {
   const { t } = useLanguage();
 
@@ -9,10 +11,9 @@ function Home() {
     document.title = t("title.home");
   }, [t]
   );
-
-
-
+  
   return (
+    <PageTransition>
     <div className="font-display">
 
       <div className="xs:ml-5 xs:mr-5 max-sm:ml-5 max-sm:mr-5
@@ -36,21 +37,21 @@ function Home() {
             {t("home.content")}
           </p>
           <br /><br />
-
+          <PageTransition>
           <Link to="/about" className="font-bold bg-ctp-text text-ctp-mantle
                                      md:pt-5 md:pb-5 md:pl-7 md:pr-7 max-sm:pt-4 max-sm:pb-4 max-sm:pl-7 max-sm:pr-7
                                      rounded-2xl
                                      transition hover:bg-ctp-mantle hover:text-ctp-text md:text-2xl max-sm:text-lg">
             {t("home.button")}
           </Link>
-
-
+          </PageTransition>
         </div>
         <div className="max-sm:hidden xs:hidden sm:hidden md:block lg:block">
           <img className="rounded-2xl" src="/photos/myself/steve_jobs_from_ohio.gif"></img>
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 }
 

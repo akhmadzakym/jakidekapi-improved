@@ -3,6 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { useState } from "react";
 
 import ImageModal from "../components/ImageModal";
+import PageTransition from "../components/PageTransition";
 
 const DigitalArt = () => {
   const { t } = useLanguage();
@@ -141,6 +142,7 @@ const DigitalArt = () => {
   );
 
   return (
+    <PageTransition>
     // wish me luck semoga gridnya responsif
     <div className="max-sm:ml-5 max-sm:mr-5
                         md:ml-10 md:mr-10
@@ -157,6 +159,7 @@ const DigitalArt = () => {
         <ImageModal src={modalData.src} caption={modalData.caption} onClose={() => setModalData(null)} />
       )}
     </div>
+    </PageTransition>
   );
 }
 

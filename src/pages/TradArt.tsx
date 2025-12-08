@@ -3,6 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { useState } from "react";
 
 import ImageModal from "../components/ImageModal";
+import PageTransition from "../components/PageTransition";
 
 const TradArt = () => {
   const { t } = useLanguage();
@@ -104,6 +105,7 @@ const TradArt = () => {
   );
 
   return (
+    <PageTransition>
     <div>
       <h1 className="text-5xl text-center max-sm:ml-5 mt-10 mb-10 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5">Personal Works</h1>
       <div className="max-sm:ml-5 max-sm:mr-5
@@ -139,6 +141,7 @@ const TradArt = () => {
       )}
       </div>
     </div>
+    </PageTransition>
   );
 }
 

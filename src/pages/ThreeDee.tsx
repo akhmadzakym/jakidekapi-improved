@@ -3,6 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { useState } from "react";
 
 import ImageModal from "../components/ImageModal";
+import PageTransition from "../components/PageTransition";
 
 const ThreeDee = () => {
     const { t } =  useLanguage();
@@ -31,6 +32,7 @@ const ThreeDee = () => {
     );
 
     return (
+      <PageTransition>
         <div className="max-sm:ml-5 max-sm:mr-5
                         md:ml-10 md:mr-10
                         xs:ml-5 xs:mr-5
@@ -45,7 +47,7 @@ const ThreeDee = () => {
         <ImageModal src={modalData.src} caption={modalData.caption} onClose={() => setModalData(null)} />
       )}
         </div>
-
+      </PageTransition>
     );
 }
 export default ThreeDee

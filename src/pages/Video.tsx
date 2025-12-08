@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
+import PageTransition from "../components/PageTransition";
+
 const Video = () => {
     const { t } =  useLanguage();
 
@@ -15,6 +17,7 @@ const Video = () => {
   ];
 
   return (
+    <PageTransition>
     <div className="max-sm:mx-5 md:mx-10 xs:mx-5 flex flex-col gap-6">
       {videos.map((video, idx) => (
         <div key={idx} className="relative w-full aspect-video overflow-hidden">
@@ -30,6 +33,7 @@ const Video = () => {
         </div>
       ))}
     </div>
+    </PageTransition>
   );
 };
 

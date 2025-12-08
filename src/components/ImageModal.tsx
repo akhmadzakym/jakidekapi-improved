@@ -11,7 +11,7 @@ const ImageModal = ({ src, caption, onClose }: Props) => {
   return (
     <AnimatePresence>
       <motion.div
-          className="fixed inset-0 bg-ctp-mantle/60 backdrop-blur-sm flex itens-center justify-center z-50"
+          className="fixed inset-0 bg-ctp-mantle/60 backdrop-blur-xs flex itens-center justify-center z-50"
           onClick={ onClose }
           initial={ { opacity: 0 } }
           animate={ { opacity:1 } }

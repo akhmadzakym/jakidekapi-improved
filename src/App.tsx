@@ -27,10 +27,15 @@
 // MASIH BINGUNG MASALAH NYA DI MANA... MINTA BANTUAN AI AH...
 // YAA NAMANYA MASIH BELAJAR, PASTI AJA ADA TRIAL DAN ERROR NYA
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// 08/12/25 FUCK I USE AI AGAIN 
+
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import './App.css'
+
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import PageTransition from './components/PageTransition';
 
 import Home from "./pages/Home"
 import DigitalArt from "./pages/DigitalArt";
@@ -42,26 +47,59 @@ import Disco from "./pages/Disco";
 import Video from "./pages/Video";
 import About from "./pages/About";
 
+const AnimatedRoutes = () => {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode='wait' initial={false}>
+      <Routes location={location} key={location.pathname}>
+        <Route path='/' element={ <PageTransition> <Home /> </PageTransition> } />
+        <Route path='/digital' element={ <PageTransition> <DigitalArt /> </PageTransition> } />
+        <Route path='/traditional' element={ <PageTransition> <TradArt /> </PageTransition> } />
+        <Route path='/graphic' element={ <PageTransition> <GraDsign /> </PageTransition> } />
+        <Route path='/threedee' element={ <PageTransition> <ThreeDee /> </PageTransition> } />
+        <Route path='/photography' element={ <PageTransition> <Photo /> </PageTransition> } />
+        <Route path='/discography' element={ <PageTransition> <Disco /> </PageTransition> } />
+        <Route path='/video' element={ <PageTransition> <Video /> </PageTransition> } />
+        <Route path='/about' element={ <PageTransition> <About /> </PageTransition> } />
+      </Routes>
+    </AnimatePresence>
+  );
+};
+
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className='font-display'>
         <NavBar />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/digital' element={<DigitalArt />} />
-            <Route path='/traditional' element={<TradArt />} />
-            <Route path='/graphic' element={<GraDsign />} />
-            <Route path='/threedee' element={<ThreeDee />} />
-            <Route path='/photography' element={<Photo />} />
-            <Route path='/discography' element={<Disco />} />
-            <Route path='/video' element={<Video />} />
-            <Route path='/about' element={<About />} />
-          </Routes>
-      </div>
+        <main><AnimatedRoutes /></main>
         <Footer />
-    </Router>
-  );
+      </div>
+    </BrowserRouter>
+  )
 }
+
+// function App() {
+//   const location = useLocation();
+//   return (
+//       <div className='font-display'>
+//         <NavBar />
+//         <AnimatePresence mode='wait'>
+//           <Routes location={location} key={location.pathname}> 
+//             <Route path='/' element={<Home />} />
+//             <Route path='/digital' element={<DigitalArt />} />
+//             <Route path='/traditional' element={<TradArt />} />
+//             <Route path='/graphic' element={<GraDsign />} />
+//             <Route path='/threedee' element={<ThreeDee />} />
+//             <Route path='/photography' element={<Photo />} />
+//             <Route path='/discography' element={<Disco />} />
+//             <Route path='/video' element={<Video />} />
+//             <Route path='/about' element={<About />} />
+//           </Routes>
+//           </AnimatePresence>
+//         <Footer />
+//         </div>
+//   );
+// }
 
 export default App;
