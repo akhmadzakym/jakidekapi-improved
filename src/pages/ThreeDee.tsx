@@ -44,12 +44,6 @@ const ThreeDee = () => {
       {modalData && (
         <ImageModal src={modalData.src} caption={modalData.caption} onClose={() => setModalData(null)} />
       )}
-
-            {/*
-            <img className="rounded-2xl" src="/photos/3d/A-fuckin-donut.gif"></img>
-            <img className="rounded-2xl" src="/photos/3d/agatetothe-heaven.gif"></img>
-            <img className="rounded-2xl" src="/photos/3d/res.gif"></img>
-            */}
         </div>
 
     );

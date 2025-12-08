@@ -12,11 +12,11 @@ const ImageModal = ({ src, caption, onClose }: Props) => {
     <AnimatePresence>
       <motion.div
           className="fixed inset-0 bg-ctp-mantle/60 backdrop-blur-sm flex itens-center justify-center z-50"
-          onClick={onClose}
-          initial={{opacity: 0}}
-          animate={{opacity:1}}
-          exit={{opacity:0}}
-          transition={{duration:0.2}}
+          onClick={ onClose }
+          initial={ { opacity: 0 } }
+          animate={ { opacity:1 } }
+          exit={ { opacity:0 } }
+          transition={ { duration:0.2 } }
       >
 
       {/* X */}
@@ -27,20 +27,20 @@ const ImageModal = ({ src, caption, onClose }: Props) => {
       {/* Modal */}
       <motion.div
         className="flex flex-col items-center"
-        onClick={(e) => e.stopPropagation()}
-        initial={{scale:0.8, opacity:0}}
-        animate={{scale:1, opacity:1}}
-        exit={{scale:0.85, opacity:0}}
-        transition={{type:"spring", stiffness: 200, damping: 20}}
+        onClick={ (e) => e.stopPropagation() }
+        initial={ { scale:0.8, opacity:0 } }
+        animate={ { scale:1, opacity:1 } }
+        exit={ { scale:0.85, opacity:0 } }
+        transition={ {type:"spring", stiffness: 200, damping: 20 } }
       >
 
       {/* Imeji */}
-      <img src={src} className="max-w-[90%] max-h-[90%] rounded-xl shadow-xl mt-6" />
+      <img src={ src } className="max-w-[90%] max-h-[90%] rounded-xl shadow-xl mt-6" />
 
       {/* Kepsyen */}
-      {caption && (
+      { caption && (
         <p className="text-ctp-text text-center mt-4 text-2xl max-w-[80vw]">
-        {caption}
+        { caption }
         </p>
       )}
 
