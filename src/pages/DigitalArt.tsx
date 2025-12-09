@@ -11,6 +11,11 @@ const DigitalArt = () => {
 
   const images = [
     {
+      src: "/photos/digita/yumenosekai_fainaru.gif",
+      caption: "",
+    },
+
+    {
       src: "/photos/digita/spcbi.gif",
       caption: "fkajsdkjflksd",
     },
@@ -24,6 +29,18 @@ const DigitalArt = () => {
       src: "/photos/digita/selfport.gif",
       caption: "",
     },
+
+    {
+      src: "/photos/digita/jaki.gif",
+      caption: "",
+    },
+
+    {
+      src: "/photos/digita/saya-sendiri_1.gif",
+      caption: "",
+    },
+
+
 
     {
       src: "/photos/digita/export202401081434415690.gif",
@@ -143,7 +160,7 @@ const DigitalArt = () => {
 
   return (
     <PageTransition>
-    // wish me luck semoga gridnya responsif
+    {/* // wish me luck semoga gridnya responsif */}
     <div className="max-sm:ml-5 max-sm:mr-5
                         md:ml-10 md:mr-10
                         xs:ml-5 xs:mr-5

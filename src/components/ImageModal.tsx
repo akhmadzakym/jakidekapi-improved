@@ -34,10 +34,10 @@ const ImageModal = ({ src, caption, onClose }: Props) => {
         transition={ {type:"spring", stiffness: 200, damping: 20 } }
       >
 
-      {/* Imeji */}
+      {/* イメージ */}
       <img src={ src } className="max-w-[90%] max-h-[90%] rounded-xl shadow-xl mt-6" />
 
-      {/* Kepsyen */}
+      {/* caption */}
       { caption && (
         <p className="text-ctp-text text-center mt-4 text-2xl max-w-[80vw]">
         { caption }
