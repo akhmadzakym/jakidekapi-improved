@@ -8,6 +8,7 @@
         "photography": "JAKIEKAPI | fotografi",
         "music": "JAKIDEKAPI | musik",
         "video": "JAKIDEKAPI | video",
+        "projects": "JAKIDEKAPI | proyek",
         "about": "JAKIDEKAPI | tentang"
     },
 
@@ -19,6 +20,7 @@
         "photography": "fotografi",
         "music": "musik",
         "video": "video",
+        "projects": "proyek",
         "about": "tentang"
     },
 
@@ -35,6 +37,15 @@
     "disco": {
         "title": "Musikku adanya di Bandcamp saja. Tolong support aku, karena aku kesusahan dan butuh uang :3"
     },
+
+    "projects": {
+        "title1": "Sejarah website ini",
+        "subtext1": "Proyek website ini udah mulai dari tahun 2023. Saya nulis kodenya pas saya masih kelas 10 dan itu masih ditulis pake HTML dan CSS aja. Tapi waktu 2024 saya belajar JavaScript biar websitenya responsif. Sekarang saya pake React sama Tailwind CSS.",
+
+        "title2": "...semuanya berawal dari ini",
+        "subtext2": "Proyek-proyek HTML sebelumnya yang membuat saya tertarik di bidang web development. Saya masih 12 tahun waktu itu."
+    },
+
 
     "about": {
         "title1": "Tentang",
