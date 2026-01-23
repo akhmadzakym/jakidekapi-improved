@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="artboard_2" data-name="artboard 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: aliceblue;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-1" x="122.71" y="574.71" width="146.57" height="144" transform="translate(-450.71 842.71) rotate(-90)"/>
+    <polygon class="cls-1" points="340 864 340 576 916 576 916 936 772 936 772 720 484 720 484 864 340 864"/>
+  </g>
+  <polygon class="cls-1" points="916 504 916 144 124 144 124 288 556 288 556 504 916 504"/>
+</svg>

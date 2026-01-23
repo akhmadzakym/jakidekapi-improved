@@ -1,0 +1,37 @@
+body {
+	background-color: midnightblue;
+	}
+	
+h1 {
+	color: darkolivegreen;
+	text-align: center;
+	}
+	
+h2 {
+	color: mediumblue;
+	}
+	
+h3 {
+	color: royalblue;
+	}
+	
+p {
+	font-family: "Times New Roman", Times, serif;
+	color: darkcyan;
+	}
+	
+a {
+	font-family: "Times New Roman", Times, serif;
+	}
+	
+ul {
+	color: lightseagreen;
+	}
+	
+ol {
+	color: lightseagreen;
+	}
+	
+li {
+	color: deepskyblue;
+	}

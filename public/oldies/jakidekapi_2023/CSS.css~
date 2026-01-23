@@ -1,0 +1,324 @@
+body {
+    background-color: #121212;
+}
+
+@font-face {
+    font-family: Jaro;
+    src: url(fonts/Jaro48pt-Regular.woff2);
+}
+
+@font-face {
+    font-family: OMORI;
+    src: url(fonts/OMORI_GAME2.ttf);
+
+}
+
+.header h1 {
+    font-size: 100pt;
+    font-family: Jaro;
+    text-decoration: none;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.header :visited {
+    color: aliceblue;
+}
+
+h1 {
+    font-family: Jaro;
+    color:aliceblue;
+    font-size: 70pt;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+p {
+    font-family: OMORI;
+    font-size: 20pt;
+    color:aliceblue;
+    text-align: center;
+}
+
+
+
+.socialscontainers {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+
+/*digital*/
+
+.one {
+    background-color: aliceblue;
+    border-radius: 12px;
+    color: #121212;
+    transition-duration: 0.4s;
+    padding: 16px 32px;
+    font-family: OMORI;
+    font-size: 20pt;
+    border: none;
+    
+}
+
+.one:hover{
+    background-color: #121212;
+    color:aliceblue;
+}
+
+/*traditional*/
+
+.two {
+    background-color: aliceblue;
+    border-radius: 12px;
+    color: #121212;
+    transition-duration: 0.4s;
+    padding: 16px 32px;
+    font-family: OMORI;
+    font-size: 20pt;
+    border: none;
+}
+
+.two:hover{
+    background-color: #121212;
+    color:aliceblue;
+}
+
+/*graphic deisgn*/
+
+.three {
+    background-color: aliceblue;
+    border-radius: 12px;
+    color: #121212;
+    transition-duration: 0.4s;
+    padding: 16px 32px;
+    font-family: OMORI;
+    font-size: 20pt;
+    border: none;
+}
+
+.three:hover{
+    background-color: #121212;
+    color:aliceblue;
+}
+
+.four {
+    background-color: aliceblue;
+    border-radius: 12px;
+    color: #121212;
+    transition-duration: 0.4s;
+    padding: 16px 32px;
+    font-family: OMORI;
+    font-size: 20pt;
+    border: none;
+}
+
+.four:hover{
+    background-color: #121212;
+    color:aliceblue;
+}
+
+.five {
+    background-color: aliceblue;
+    border-radius: 12px;
+    color: #121212;
+    transition-duration: 0.4s;
+    padding: 16px 32px;
+    font-family: OMORI;
+    font-size: 20pt;
+    border: none;
+}
+
+.five:hover{
+    background-color: #121212;
+    color:aliceblue;
+}
+
+.about {
+    background-color: aliceblue;
+    border-radius: 12px;
+    color: #121212;
+    transition-duration: 0.4s;
+    padding: 16px 32px;
+    font-family: OMORI;
+    border: none;
+}
+
+.about:hover{
+    background-color: #121212;
+    color:aliceblue;
+}
+
+
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.gambarjaki {
+
+    margin-left: 10px;
+}
+
+
+/*aboutme text*/
+
+.about_text {
+    font-size: 20pt;
+    text-align: left;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    margin-top: -150;
+}
+
+/*his socials*/
+
+.sosialmed {
+    font-size: 15pt;
+    text-decoration-color: aliceblue;
+}
+
+.sosialmed a:visited {
+    text-decoration-color: aliceblue;
+}
+
+.social{
+    font-size: 50pt;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}
+
+.container1 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+
+.mymusic {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50pt;
+}
+
+.headerabout {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 70pt;
+}
+
+.menu1 {
+    text-align: left;
+    font-size: 14pt;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    background-color: aliceblue;
+    width: 800px;
+    height: 50px;
+    border-radius: 16px;
+}
+
+.navbar img.activenav {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar a.activenav {
+    background-color: #121212;
+}
+
+.navbar a {
+    font-family: OMORI;
+    font-size: 20pt;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #121212;
+    transition-duration: 0.6s;
+}
+
+.navbar a:visited {
+    color: #121212;
+}
+
+.navbar a:hover {
+    background-color: #121212;
+    color: aliceblue;
+    
+}
+
+.activenav a:hover {
+    fill: aliceblue;
+}
+
+img.gambarjaki {
+    border-radius: 12px;
+}
+
+.baris {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+
+.kolom {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.kolom img {
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+    flex: 50%;
+    width: auto;
+    height: 500px;
+    
+}
+
+.homepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+.whowho img {
+    border-radius: 16px;
+    height: 500px;
+    width: auto;
+}
+
+.whowho {
+    margin-left: 20px;
+}
+
+#hello {
+    text-align: left;
+}
+
+#iam {
+    text-align: left;
+}
+
+.buka {
+    margin-left: 50px;
+}
+
+/*modal dikit dnk!*/

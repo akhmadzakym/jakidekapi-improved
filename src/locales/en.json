@@ -8,6 +8,7 @@
         "photography": "JAKIEKAPI | photography",
         "music": "JAKIDEKAPI | music",
         "video": "JAKIDEKAPI | video",
+        "projects": "JAKIDEKAPI | projects",
         "about": "JAKIDEKAPI | about"
     },
 
@@ -19,6 +20,7 @@
         "photography": "photography",
         "music": "music",
         "video": "video",
+        "projects": "projects",
         "about": "about"
     },
 
@@ -34,6 +36,14 @@
     
     "disco": {
         "title": "My music is only available on Bandcamp only. Please support me, I'm struggling :3"
+    },
+
+    "projects": {
+        "title1": "History of this website",
+        "subtext1": "This website project started in 2023. I wrote the code in my sophomore year and it was written using pure HTML and CSS. But then I decided to learn JavaScript in 2024 so my website would be responsive. But as of right now I use React and Tailwind CSS on my website.",
+
+        "title2": "...the one who started it all",
+        "subtext2": "My early HTML projects that got me into web development. I was 12 years old back then."
     },
 
     "about": {

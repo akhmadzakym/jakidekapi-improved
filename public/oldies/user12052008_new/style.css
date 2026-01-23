@@ -1,0 +1,207 @@
+body {
+	background-color: #8d8f8e;
+}
+@font-face { font-family: PressStart2p; src: url('albumcov/PressStart2P-Regular.ttf');
+} 
+	
+h1 {
+font-family: PressStart2p, sans-serif; 
+font-size: 40px;
+}
+
+h2 {
+	font-family: PressStart2p, sans-serif; 
+font-size: 40px;
+text-align:  center;
+}
+
+h3 {
+	font-family: PressStart2p, sans-serif; 
+	font-size: 40px;
+	text-align:  center;
+}
+
+h4 {
+	font-family: PressStart2p, sans-serif; 
+	font-size: 40px;
+	text-align:  center;
+}
+
+p {
+	font-family: PressStart2p, sans-serif; 
+	font-size: 11px;
+}
+
+#one{
+	font-family: PressStart2p, sans-serif; 
+	text-align: right;
+	font-size: 20px;
+}
+
+#two {
+	font-family: PressStart2p, sans-serif; 
+	text-align: center;
+	font-size: 40px;
+	
+}
+
+#three {
+	font-family: PressStart2p, sans-serif; 
+	text-align: center;
+	font-size: 20px;
+}
+
+#four {
+	font-family: PressStart2p, sans-serif; 
+	text-align: center;
+	font-size: 20px;
+}
+
+#five {
+	font-family: PressStart2p, sans-serif; 
+	text-align: center;
+	font-size: 20px;
+}
+
+#six {
+	font-family: PressStart2p, sans-serif; 
+	text-align: center;
+	font-size: 20px;
+}
+
+#seven {
+font-family: PressStart2p, sans-serif; 
+	text-align: center;
+	font-size: 20px;
+}
+	
+#eight { 
+    font-family: PressStart2p, sans-serif; 
+	text-align: center;
+	font-size: 20px;
+}
+
+#nine {
+	 font-family: PressStart2p, sans-serif; 
+	text-align: center;
+	font-size: 20px;
+}
+
+#ten {
+	display: block;
+	font-family: PressStart2p, sans-serif; 
+	font-size: 10px;
+	text-align: center;	
+}
+
+#eleven {
+	font-family: PressStart2p, sans-serif; 
+	font-size: 10px;
+	text-align: center;
+}
+
+
+#twelve {
+	 font-family: PressStart2p, sans-serif; 
+	text-align: center;
+	font-size: 20px;
+}
+
+#thirteen {
+	font-family: PressStart2p, sans-serif; 
+	text-align: center;
+	font-size:20px;
+}
+
+#fourteen {
+	font-family: PressStart2p, sans-serif; 
+	text-align: center;
+	font-size:20px;
+}
+
+.center {
+	padding-top: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.center2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.center3 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.center4 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.center5 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+max-width: 100%;
+	height: auto;
+}
+
+.center6 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.center7 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+	
+.center8 {
+     	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.center9 {
+		display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.center10 {
+		display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.animation1 {
+	font-family: PressStart2p, sans-serif; 
+	font-size: 50px;
+	text-align: center;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="favicon/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JAKIDEKAPI [about me]</title>
+    </head>
+
+    <script src="javascript/JS1.JS"></script>
+
+    <!-- Navigation Bar (mobile) -->
+    <body>
+        <div class="mobile_navbar">
+            <a href="PROTOTYPE_MOBILE.html"><img class="mobile_home" src="jakidekapi with face.svg"></a>
+
+            <div id="links">
+                <a href="d_art.html">[digital art]</a>
+                <a href="">[traditional art]</a>
+                <a href="">[graphic design]</a>
+                <a href="">[photography]</a>
+                <a href="">[musics]</a>
+                <a href="aboutme.html">[about me]</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <h1 class="about">[about me]</h1>
+        <!--ABOUT ME-->
+
+        <!--PARAGRAF 1_2-->
+        <div class="container">
+            <div class="deskripsi">
+
+                <div class="imgpar_1_2">
+                    <img src="pictures/myself/IMG_4864.gif" title="photo by unknown. oh btw, who is this?">
+                </div>
+
+                    <p class="par_1_2">Akhmad Zaky Maulana<br>
+                        b. 2008 Bekasi, Indonesia.<br>
+                        <br>
+                        
+                        An artist, musician, photographer, and student as well in SMK Al-Muhtadin. In SMK Al-Muhtadin, he studies <strong>Visual Communication Design</strong>. Sometimes he always locks his room all day just to make a work of art that [maybe] everyone will love.<br>
+                        <br>
+                        
+                        His interest in art started when he was 11 years old. It’s all started when he’s started his little project making a Minecraft head avatar. The reason why he decided to pursue art because of his friend who can draw.
+                        </p>
+            </div>
+        </div>
+
+        <!--PARAGRAF 3_4_5-->
+        <div class="container">
+            <div class="deskripsi">
+                <div class="par_3_4_5">
+
+                    <!--gambar-->
+                    <div class="imgpar_3_4_5">
+                        <img src="pictures/myself/20240404_190137.gif" title="photo by me. WHY ARE YOU SO FUCKING UGLY DUDE?">
+                    </div>
+
+                    <p>Started making music at 14, he is highly influenced by a British electronic musician Richard David James also known as Aphex Twin. For him, Aphex Twin is the 'Father of Electronic Musician' because of the way Aphex Twin makes music. Akhmad Zaky Maulana also influenced by other musician like Squarepusher, Autechre, Imaginary Softwoods, and Steve Hauschildt.<br><br></p>
+
+                    <!--gambar-->
+                    <div class="imgpar_3_4_5">
+                        <img class="imgpar_3_4_5_A" src="pictures/myself/IMG_4942.gif" title="photo by dzaki b.m. it's not my camera.">
+                    </div>
+
+                    <p>Photography is his favorite thing to do other than making music. He does not have a real camera. So, he shoots eveything on his phone. In his works, he shoots everything that he finds interesting. No wonder why his disk drives is always full of random photos. Sky, cloud, tall grass, and sun ray is his favorite subject to shoot. Because it's 'showing the peaceful side of Earth' <br><br></p>
+                        
+                    <q class="quote">For me, sun rays heats my body, skies is my entertainment and grass is where I lay down to rest</q>
+
+                    <p>
+                        Besides his interests in arts and music, he also interested in 'computers' and programming. In 2010, His big sister introduced him how to operate a computer. At that time they are using Windows XP. His knowledge on computer is 'higher' than his older sister who studies IT before. Programming has becoming his interest because of the COVID-19 pandemic. He really don't know what to do other than finishing his online school assigment. He learned HTML because he finds it easy to learn. His HTML project was just a simple biography website with a poorly designed CSS. Until now, HTML becoming useful for him to showcasing his art on this website.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- My Skill -->
+         <div class="container">
+            <div class="myskills">
+
+                <div class="header_myskills">
+                    <h1>[my skills]</h1>
+                </div>
+
+                <p><strong>[html]</strong> 35%</p>
+                <p><strong>[css]</strong> 35%</p>
+                <p><strong>[adobe illustrator]</strong> 40%</p>
+                <p><strong>[adobe photoshop]</strong> 30%</p>
+                <p><strong>[drawing digitally]</strong> 50%</p>
+                <p><strong>[drawing traditionally]</strong> 20%</p>
+            </div>
+         </div>
+
+        <!--social-->
+        <div class="container">
+            <div class="header_social">
+                <h1>[his socials]</h1>
+                <div class="social_list">
+                    <strong>
+                    <a href="https://www.instagram.com/br0ket33n/" target="_blank" rel="noopener noreferrer">[instagram @br0ket33n] [MAIN_ACCOUNT]</a><br><br>
+                    <a href="https://www.instagram.com/jakidekapi/" target="_blank" rel="noopener noreferrer">[instagram @jakidekapi] [PORTFOLIO_PAGE_ACCOUNT]</a><br><br>
+                    <a href="https://broktin.bandcamp.com/" target="_blank" rel="noopener noreferrer">[bandcamp] [broktin]</a><br><br>
+                    <a href="https://azmazmazmazmazm.bandcamp.com/" target="_blank" rel="noopener noreferrer">[bandcamp] [akhmad zaky maulana.]</a><br><br>
+                    </strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="hosted_by">
+            <p>Copyright &copy; Akhmad Zaky Maulana 2024 &VerticalBar; Hosted by Neocities.</p>
+        </div>
+
+    </body>
+</html>

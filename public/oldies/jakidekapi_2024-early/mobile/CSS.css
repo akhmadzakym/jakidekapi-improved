@@ -1,0 +1,380 @@
+
+body {
+    background-color: #121212;
+}
+
+
+@font-face {
+    font-family: OMORI;
+    src: url(fonts/OMORI_GAME2.ttf);
+
+}
+
+@font-face {
+    font-family: MartianMono;
+    src: url(fonts/MartianMono-VariableFont_wdth\,wght.ttf);
+}
+
+p {
+    font-family: MartianMono;
+    font-weight: 300;
+    color: white;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h1 {
+    font-family: MartianMono;
+    font-weight: 800;
+    color: white;
+}
+
+
+.about {
+    font-size: 36pt;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-bottom: unset;
+}
+
+/*HEADER JAKIDEKAPI*/
+
+.header {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/*NAVBAR*/
+
+.whole_navbar {
+    background-color: white;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 146px;
+}
+
+
+.navbar a {
+    font-family: MartianMono;
+    float: left;
+    color: #121212;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 11pt;
+    transition-duration: 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+
+}
+
+.whole_navbar a:hover {
+    background-color: #121212;
+}
+
+/*FOOTER*/
+
+.hosted_by {
+    text-align: center;
+    color: white;
+    font-size: 5pt;
+}
+
+.neocities_logo {
+    align-items: center;
+}
+
+/*HOMEPAGE*/
+
+.home_body {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+
+.gambaraku_2 {
+    margin-left: 30px;
+}
+
+.gambaraku_2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.gambaraku img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.deskripsi_gambaraku h1 {
+    margin: unset;
+    font-size: 36pt;
+}
+
+.body {
+    font-size: 14pt;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.subjudul {
+    font-weight: 500;
+    font-size: 22pt;
+
+}
+
+.button {
+    background-color: white;
+    color: #121212;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-family: MartianMono;
+    transition-duration: 0.3s;
+}
+
+
+
+/*ABOUT ME*/ /*ABOUT ME*/ /*ABOUT ME*/ /*ABOUT ME*/ /*ABOUT ME*/
+
+.quote {
+    font-weight: 900;
+    font-family: MartianMono;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.deskripsi_aboutme {
+    margin-top: unset;
+    line-height: 1.5;
+}
+
+.imgpar_1_2 {
+    margin-right: unset;
+}
+.imgpar_1_2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.par_1_2 {
+    margin-top: unset;
+    line-height: 1.5;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.par_3_4_5 {
+    margin-top: unset;
+    line-height: 1.5;
+    margin-right: unset;
+    font-size: 12px;
+    margin-bottom: unset;
+    text-align: justify;
+}
+
+.imgpar_3_4_5 img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.imgpar_3_4_5_A {
+    margin-top: unset;
+}
+/*socials*/
+.social_list a{
+    color: white;
+    font-family: MartianMono;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 12pt;
+}
+
+.header_social {
+    font-size: 13pt;
+    text-align: center;
+}
+.social_list{
+    text-align: left;
+}
+/* My Skills */
+.header_myskills {
+    font-size: 16pt;
+    text-align: center;
+}
+
+/*TITLE: DIGITAL ART, TRADITIONAL ART, GRAPHIC DESIGN, PHOTOGRAPHY, MUSICS*/
+.title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36pt;
+}
+
+/*BARIS DAN KOLOM BERLAKU KE SEMUA HALAMAN YANG MEMAKAI CLASS 'KOLOM' DAN 'BARIS'*/
+.baris {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.kolom {
+    flex: 50%;
+    padding: 0 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.kolom img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .kolom{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .kolom {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/*music embed bandcamp & stuff*/
+
+.embed_musics_baris {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+
+.musics_header {
+    text-align: center;
+}
+
+.embed_musics_kolom {
+    flex: 50%;
+    padding: 0 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.embed_musics_kolom iframe {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px;
+    width : 379px;
+    height: 379px;
+}
+
+/* untuk mobile */
+
+.mobile_navbar {
+    overflow: hidden;
+    position: relative;
+}
+
+.mobile_navbar #links {
+    display: none;
+}
+
+.mobile_home {
+    width: 170px; /*ukuran logo*/
+    height: auto;
+
+    margin-left: 12px; 
+    margin-right: 12px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mobile_navbar a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.mobile_navbar .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#links a {
+    font-family: MartianMono;
+    display: block;
+    padding: unset;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+/*collage photo*/
+.image_collage_mobile {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.image_collage_mobile img{
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.judulh {
+    text-align: center;
+}

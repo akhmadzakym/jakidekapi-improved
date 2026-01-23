@@ -7,149 +7,175 @@ import PageTransition from "../components/PageTransition";
 
 const DigitalArt = () => {
   const { t } = useLanguage();
-  const [modalData, setModalData] = useState<{ src: string; caption: string } | null>(null);
+  const [modalData, setModalData] = useState<{ src: string; titletext: string; desc: string } | null>(null);
 
   const images = [
     {
       src: "/photos/digita/yumenosekai_fainaru.gif",
-      caption: "",
+      titletext: "Yume no Sekai/Dream World (2025)",
+      desc: "My drawing exercise. Created using Clip Studio Paint.",
     },
 
     {
       src: "/photos/digita/spcbi.gif",
-      caption: "fkajsdkjflksd",
+      titletext: "Captain Spaceboy, from OMORI",
+      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
     },
 
     {
       src: "/photos/digita/kle.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/selfport.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/jaki.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/saya-sendiri_1.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
-
-
 
     {
       src: "/photos/digita/export202401081434415690.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/artblock1.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/idkbro.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/strboenstr2.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/ikari.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/cat_resized.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/FROG_RESIZED.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/BZZZT_RESIZED.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/THE_SHENANIGANS_RESIZED.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/untitled-something.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled189.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled190.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled40.png",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled228.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/Artboard 1.png",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/desktopa.png",
-      caption: "",
+      titletext: "Multiply (2023)",
+      desc: "Abstract art that has no meaning.",
     },
 
     {
       src: "/photos/digita/Artboard 1a.png",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled38.png",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled39.png",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled42.png",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled78.png",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled46.png",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
   ];
 
@@ -173,7 +199,7 @@ const DigitalArt = () => {
       ))}
 
       {modalData && (
-        <ImageModal src={modalData.src} caption={modalData.caption} onClose={() => setModalData(null)} />
+        <ImageModal src={modalData.src} titletext={modalData.titletext} desc={modalData.desc} onClose={() => setModalData(null)} />
       )}
     </div>
     </PageTransition>

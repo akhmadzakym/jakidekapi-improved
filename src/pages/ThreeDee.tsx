@@ -7,22 +7,25 @@ import PageTransition from "../components/PageTransition";
 
 const ThreeDee = () => {
     const { t } =  useLanguage();
-    const [modalData, setModalData] = useState<{src:string; caption: string} | null>(null);
+    const [modalData, setModalData] = useState<{src:string; titletext:string; desc: string} | null>(null);
 
     const images = [
       {
         src: "/photos/3d/A-fuckin-donut.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
       
       {
         src: "/photos/3d/agatetothe-heaven.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
       
       {
         src: "/photos/3d/res.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
     ];
 
@@ -44,7 +47,7 @@ const ThreeDee = () => {
       ))}
 
       {modalData && (
-        <ImageModal src={modalData.src} caption={modalData.caption} onClose={() => setModalData(null)} />
+        <ImageModal src={modalData.src} titletext={modalData.titletext} desc={modalData.desc} onClose={() => setModalData(null)} />
       )}
         </div>
       </PageTransition>

@@ -7,77 +7,91 @@ import PageTransition from "../components/PageTransition";
 
 const Photo = () => {
   const { t } = useLanguage();
-  const [modalData, setModalData] = useState<{ src: string; caption: string } | null>(null);
+  const [modalData, setModalData] = useState<{ src: string; titletext: string; desc: string } | null>(null);
 
   const images = [
     {
       src: "/photos/photograp/IMG_4153.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/1.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/2.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/3.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/4.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/5.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/6.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/7.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/8.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/9.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/10.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/11.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/12.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/13.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
   ]
@@ -85,62 +99,74 @@ const Photo = () => {
   const images1 = [
     {
       src: "/photos/photograp/20230122_123917.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/LRM_20230718_161920.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/LRM_20230718_162037-(1).gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/LRM_20230718_162048-(1).gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/20250103_070841.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/20250103_070926.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/20250103_074422.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/20250103_070015.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/20221028_190445.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/20221120_054028.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/mtmerapi.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
     {
       src: "/photos/photograp/pemecahombak.gif",
-      caption: "",
+      titletext: "",
+      desc: "",
     },
 
   ]
@@ -166,7 +192,7 @@ const Photo = () => {
         ))}
 
         {modalData && (
-          <ImageModal src={modalData.src} caption={modalData.caption} onClose={() => setModalData(null)} />
+          <ImageModal src={modalData.src} titletext={modalData.desc} desc={modalData.desc} onClose={() => setModalData(null)} />
         )}
       </div>
 
@@ -183,7 +209,7 @@ const Photo = () => {
         ))}
 
         {modalData && (
-          <ImageModal src={modalData.src} caption={modalData.caption} onClose={() => setModalData(null)} />
+          <ImageModal src={modalData.src} titletext={modalData.desc} desc={modalData.desc} onClose={() => setModalData(null)} />
         )}
       </div>
     </div>

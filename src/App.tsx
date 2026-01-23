@@ -7,7 +7,7 @@
 //       <>
 //         <NavBar /> {/*Navigation Bar Component*/}
 //       </>
-      
+
 //         <div className='xs:ml-5 xs:mr-5 sm:ml-5 sm:mr-5 md:ml-10 md:mr-10 lg:ml-10 lg:mr-10 lg:grid-cols-2 md:grid-cols-2 gap-5 welcome'>
 //           <div className="content-center">
 //             <h1 className="text-7xl font-bold leading-21">Hello, I'm <br>Akhmad Zaky Maulana</br></h1>
@@ -45,6 +45,7 @@ import ThreeDee from "./pages/ThreeDee";
 import Photo from "./pages/Photo";
 import Disco from "./pages/Disco";
 import Video from "./pages/Video";
+import Projects from "./pages/Projects";
 import About from "./pages/About";
 
 const AnimatedRoutes = () => {
@@ -53,15 +54,16 @@ const AnimatedRoutes = () => {
   return (
     <AnimatePresence mode='wait' initial={false}>
       <Routes location={location} key={location.pathname}>
-        <Route path='/' element={ <PageTransition> <Home /> </PageTransition> } />
-        <Route path='/digital' element={ <PageTransition> <DigitalArt /> </PageTransition> } />
-        <Route path='/traditional' element={ <PageTransition> <TradArt /> </PageTransition> } />
-        <Route path='/graphic' element={ <PageTransition> <GraDsign /> </PageTransition> } />
-        <Route path='/threedee' element={ <PageTransition> <ThreeDee /> </PageTransition> } />
-        <Route path='/photography' element={ <PageTransition> <Photo /> </PageTransition> } />
-        <Route path='/discography' element={ <PageTransition> <Disco /> </PageTransition> } />
-        <Route path='/video' element={ <PageTransition> <Video /> </PageTransition> } />
-        <Route path='/about' element={ <PageTransition> <About /> </PageTransition> } />
+        <Route path='/' element={<PageTransition> <Home /> </PageTransition>} />
+        <Route path='/digital' element={<PageTransition> <DigitalArt /> </PageTransition>} />
+        <Route path='/traditional' element={<PageTransition> <TradArt /> </PageTransition>} />
+        <Route path='/graphic' element={<PageTransition> <GraDsign /> </PageTransition>} />
+        <Route path='/threedee' element={<PageTransition> <ThreeDee /> </PageTransition>} />
+        <Route path='/photography' element={<PageTransition> <Photo /> </PageTransition>} />
+        <Route path='/discography' element={<PageTransition> <Disco /> </PageTransition>} />
+        <Route path='/video' element={<PageTransition> <Video /> </PageTransition>} />
+        <Route path='/projects' element={<PageTransition> <Projects /> </PageTransition>} />
+        <Route path='/about' element={<PageTransition> <About /> </PageTransition>} />
       </Routes>
     </AnimatePresence>
   );

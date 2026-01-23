@@ -30,6 +30,7 @@ const NavBar = () => {
         <Link to="/photography" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.photography")}</Link>
         <Link to="/discography" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.music")}</Link>
         <Link to="/video" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.video")}</Link>
+        <Link to="/projects" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.projects")}</Link>
         <Link to="/about" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.about")}</Link>
       </div>
 
@@ -44,12 +45,12 @@ const NavBar = () => {
       {/* Mobile Menu (Dropdown) */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.15 }}
-                className="absolute top-16 left-0 w-full bg-ctp-mantle flex flex-col items-center gap-4 py-4 z-50 md:hidden">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.15 }}
+            className="absolute top-16 left-0 w-full bg-ctp-mantle flex flex-col items-center gap-4 py-4 z-50 md:hidden">
             <Link to="/digital" onClick={toggleMenu}>{t("navbar.digital")}</Link>
             <Link to="/traditional" onClick={toggleMenu}>{t("navbar.traditional")}</Link>
             <Link to="/graphic" onClick={toggleMenu}>{t("navbar.graphic_design")}</Link>
@@ -57,10 +58,11 @@ const NavBar = () => {
             <Link to="/photography" onClick={toggleMenu}>{t("navbar.photography")}</Link>
             <Link to="/discography" onClick={toggleMenu}>{t("navbar.music")}</Link>
             <Link to="/video" onClick={toggleMenu}>{t("navbar.video")}</Link>
+            <Link to="/projects" onClick={toggleMenu}>{t("navbar.projects")}</Link>
             <Link to="/about" onClick={toggleMenu}>{t("navbar.about")}</Link>
           </motion.div>
-      )}
-        </AnimatePresence>  
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

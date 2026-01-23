@@ -7,94 +7,115 @@ import PageTransition from "../components/PageTransition";
 
 const TradArt = () => {
   const { t } = useLanguage();
-    const [modalData, setModalData] = useState<{src:string; caption: string} | null>(null);
+    const [modalData, setModalData] = useState<{src:string; titletext:string; desc: string} | null>(null);
 
     const images = [
       {
+        // Oenyglkos Vasarnap
         src: "/photos/traditional/IMG_011.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
+        // Mysterious Girl that I drew on middle school but i decided to remake it.
         src: "/photos/traditional/mysgrl.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
+        // Felis Catus.
         src: "/photos/traditional/taxidermy_cat.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
+        // 
         src: "/photos/traditional/Untilted-2.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/skndchns.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/jxtadc.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/KAKENROOKEN_STIVLOBITS.GIF",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/sunsetz.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/whoisthispersonthatiamdrawingidontknowhimforsureandidontknowwhyidrewhim.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/blood.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/boy.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/m.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
     ];
 
     const images1 = [
       {
         src: "/photos/traditional/A_C_ORJ.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/A_C_PZZ.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/A_C_ORR.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/reppdots.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
       {
         src: "/photos/traditional/IMG_010.gif",
-        caption: "",
+        titletext: "",
+        desc: "",
       },
 
     ];
@@ -120,7 +141,7 @@ const TradArt = () => {
       ))}
 
       {modalData && (
-        <ImageModal src={modalData.src} caption={modalData.caption} onClose={() => setModalData(null)} />
+        <ImageModal src={modalData.src} titletext={modalData.titletext} desc={modalData.desc} onClose={() => setModalData(null)} />
       )}
       </div>
 
@@ -137,7 +158,7 @@ const TradArt = () => {
       ))}
 
       {modalData && (
-        <ImageModal src={modalData.src} caption={modalData.caption} onClose={() => setModalData(null)} />
+        <ImageModal src={modalData.src} titletext={modalData.titletext} desc={modalData.desc} onClose={() => setModalData(null)} />
       )}
       </div>
     </div>
