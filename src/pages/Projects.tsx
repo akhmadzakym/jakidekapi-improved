@@ -11,21 +11,21 @@ function Projects() {
     {
       title: "JAKIDEKAPI (2023 Prototype)",
       desc: "'Hmm... Why don't i make my own portfolio website for my artworks? I know how to do it.' is the thing that popped up on my head. The reason why i made this website is because my teacher tell us students to make our own portfolio. While other students uploaded their artworks on Instagram, I chose to put it on my website instead. And here's the prototype. And fun fact: On this website I finally using <div> tag for the first time...",
-      url: "/public/oldies/jakidekapi_2023/",
+      url: "/oldies/jakidekapi_2023/",
 
     },
 
     {
       title: "JAKIDEKAPI (2024 early version)",
       desc: "This one is a bit better because I had the motivation to improve it. Decided to make it 'responsive' using JavaScript. It's time-consuming.",
-      url: "/public/oldies/jakidekapi_2024-early/",
+      url: "/oldies/jakidekapi_2024-early/",
 
     },
 
     {
       title: "JAKIDEKAPI (2024)",
       desc: "This is the final version.",
-      url: "/public/oldies/jakidekapi2024/",
+      url: "/oldies/jakidekapi2024/",
     },
   ];
 
@@ -33,17 +33,17 @@ function Projects() {
     {
       title: "blockytube (2021)",
       desc: "This might be the earliest project that i have. So, the whole idea of this project is I want to make a website like YouTube but it's targeted to Minecraft player so they can post their Minecraft video. It's unfinished.",
-      url: "/public/oldies/blockytube/"
+      url: "/oldies/blockytube/"
     },
     {
       title: "user12052008 homepage (2022)",
       desc: "This website will make your eyeball singe. 'user12052008' is my alias for my early music project.",
-      url: "/public/oldies/user12052008_old/"
+      url: "/oldies/user12052008_old/"
     },
     {
       title: "user12052008 homepage (2022 better version)",
       desc: "I decided to remake it from scratch and it turns out to be a bit better than before. This website originally hosted on 000webhost. But now it has been shut down because 000webhost is closing. Thank you for giving me a free website hosting. You'll be remembered. Now I'm on Netlify.",
-      url: "/public/oldies/user12052008_new/"
+      url: "/oldies/user12052008_new/"
     }
   ];
 
