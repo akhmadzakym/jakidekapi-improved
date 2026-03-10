@@ -63,7 +63,11 @@ function Projects() {
 
  return (
     <PageTransition>
-      <div className="p-10 space-y-10">
+      <div className="max-sm:ml-5 max-sm:mr-5
+                    xs:ml-5 xs:mr-5
+                    sm:ml-5 sm:mr-5
+                    md:ml-10 md:mr-10
+                    lg:ml-10 lg:mr-10 space-y-10">
           <div className="text-5xl font-bold">
           <h1>{t("projects.title1")}</h1>
         </div>
