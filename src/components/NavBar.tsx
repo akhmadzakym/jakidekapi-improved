@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { Menu, X} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTheme } from "../context/ThemeContext";
 
 import { useLanguage } from "../context/LanguageContext";
 
@@ -11,8 +10,6 @@ const NavBar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const { t } = useLanguage();
-
-  const {theme, toggleTheme} = useTheme();
 
   return (
     <nav className="flex items-center justify-between 
@@ -41,7 +38,6 @@ const NavBar = () => {
         <Link to="/video" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.video")}</Link>
         <Link to="/projects" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.projects")}</Link>
         <Link to="/about" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.about")}</Link>
-        <button onClick={toggleTheme} className="transition hover:scale-110"> {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />} </button>
       </div>
 
       {/* Hamburger Button */}
