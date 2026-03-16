@@ -18,7 +18,7 @@ const LangSwitcher = () => {
       {/* Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 px-3 py-2 max-sm:text-xs md:text-base rounded-lg bg-ctp-base border-2 text-ctp-text hover:bg-ctp-crust focus:outline-none"
+        className="flex items-center gap-2 px-3 py-2 max-sm:text-xs md:text-base rounded-lg bg-ctp-text border-2 text-ctp-crust hover:bg-ctp-crust hover:text-ctp-text focus:outline-none"
       >
         <span>{current?.label}</span>
         <ChevronDown className="w-4 h-4" />
