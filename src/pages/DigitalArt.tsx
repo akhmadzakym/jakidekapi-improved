@@ -12,14 +12,14 @@ const DigitalArt = () => {
   const images = [
     {
       src: "/photos/digita/yumenosekai_fainaru.gif",
-      titletext: "Yume no Sekai/Dream World (2025)",
-      desc: "My drawing exercise. Created using Clip Studio Paint.",
+      titletext: "digital.yumenosekai_fainaru.titletext",
+      desc: "digital.yumenosekai_fainaru.desc",
     },
 
     {
       src: "/photos/digita/spcbi.gif",
-      titletext: "Captain Spaceboy, from OMORI",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
+      titletext: "digital.spcbi.titletext",
+      desc: "digital.spcbi.desc",
     },
 
     {
@@ -199,7 +199,7 @@ const DigitalArt = () => {
       ))}
 
       {modalData && (
-        <ImageModal src={modalData.src} titletext={modalData.titletext} desc={modalData.desc} onClose={() => setModalData(null)} />
+        <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
       )}
     </div>
     </PageTransition>

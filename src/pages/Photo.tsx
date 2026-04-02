@@ -192,7 +192,7 @@ const Photo = () => {
         ))}
 
         {modalData && (
-          <ImageModal src={modalData.src} titletext={modalData.desc} desc={modalData.desc} onClose={() => setModalData(null)} />
+          <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
         )}
       </div>
 
@@ -209,7 +209,7 @@ const Photo = () => {
         ))}
 
         {modalData && (
-          <ImageModal src={modalData.src} titletext={modalData.desc} desc={modalData.desc} onClose={() => setModalData(null)} />
+          <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
         )}
       </div>
     </div>

@@ -141,7 +141,7 @@ const TradArt = () => {
       ))}
 
       {modalData && (
-        <ImageModal src={modalData.src} titletext={modalData.titletext} desc={modalData.desc} onClose={() => setModalData(null)} />
+        <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
       )}
       </div>
 
@@ -158,7 +158,7 @@ const TradArt = () => {
       ))}
 
       {modalData && (
-        <ImageModal src={modalData.src} titletext={modalData.titletext} desc={modalData.desc} onClose={() => setModalData(null)} />
+        <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
       )}
       </div>
     </div>
