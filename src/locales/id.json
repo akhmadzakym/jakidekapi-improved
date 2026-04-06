@@ -22,7 +22,7 @@
         "music": "musik",
         "video": "video",
         "projects": "proyek",
-        "announce": "pemgumuman",
+        "announce": "pengumuman",
         "about": "tentang"
     },
 
@@ -485,6 +485,13 @@
 
         "title2": "...semuanya berawal dari ini",
         "subtext2": "Proyek-proyek HTML sebelumnya yang membuat saya tertarik di bidang web development. Saya masih 12 tahun waktu itu."
+    },
+
+    "announce": {
+      "paragraph1": "'Strawberry Era' adalah film pertama saya dan juga tugas akhir sekolah saya. Film ini adalah dokumenter tentang anak muda sekarang dijuluki sebangai 'strawberry generation'. Film ini 99% dibuat oleh saya. Termasuk soundtrack film ini juga dibuat oleh saya. Tanpa menggunakan A.I apapun seperti Suno. ",
+      "paragraph2": "'If we do not improve and better ourselves, we would truly be crushed like strawberries'",
+      "paragraph3": "Dokumenter ini mengamati dampak budaya terhadap julukan yang diberikan kepada generasi muda, seperti 'Generasi Stroberi'. Berdasarkan survei publik yang dilakukan oleh platform media di Taiwan, film ini mengeksplor alasan mengapa generasi muda dengan tegas menolak julukan tersebut. Melalui wawancara dan observasi sehari-hari, dokumenter ini membandingkan apakah julukan tersebut mencerminkan kenyataan atau justru memperkuat kesalahpahaman. Pada akhirnya, film ini mengajak penonton untuk mempertimbangkan kembali bagaimana bahasa membentuk identitas generasi dan persepsi budaya.",
+      "paragraph4": "Coming soon on YouTube. TBA."
     },
 
 
