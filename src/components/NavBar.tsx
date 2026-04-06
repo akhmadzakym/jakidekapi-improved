@@ -37,6 +37,7 @@ const NavBar = () => {
         <Link to="/discography" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.music")}</Link>
         <Link to="/video" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.video")}</Link>
         <Link to="/projects" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.projects")}</Link>
+        <Link to="/announce" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.announce")}</Link>
         <Link to="/about" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.about")}</Link>
       </div>
 
@@ -65,6 +66,7 @@ const NavBar = () => {
             <Link to="/discography" onClick={toggleMenu}>{t("navbar.music")}</Link>
             <Link to="/video" onClick={toggleMenu}>{t("navbar.video")}</Link>
             <Link to="/projects" onClick={toggleMenu}>{t("navbar.projects")}</Link>
+            <Link to="/announce" onClick={toggleMenu}>{t("navbar.announce")}</Link>
             <Link to="/about" onClick={toggleMenu}>{t("navbar.about")}</Link>
           </motion.div>
         )}

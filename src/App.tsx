@@ -46,6 +46,7 @@ import Photo from "./pages/Photo";
 import Disco from "./pages/Disco";
 import Video from "./pages/Video";
 import Projects from "./pages/Projects";
+import Announce from "./pages/Announce";
 import About from "./pages/About";
 
 const AnimatedRoutes = () => {
@@ -63,6 +64,7 @@ const AnimatedRoutes = () => {
         <Route path='/discography' element={<PageTransition> <Disco /> </PageTransition>} />
         <Route path='/video' element={<PageTransition> <Video /> </PageTransition>} />
         <Route path='/projects' element={<PageTransition> <Projects /> </PageTransition>} />
+        <Route path='/announce' element={<PageTransition><Announce /></PageTransition>} />
         <Route path='/about' element={<PageTransition> <About /> </PageTransition>} />
       </Routes>
     </AnimatePresence>

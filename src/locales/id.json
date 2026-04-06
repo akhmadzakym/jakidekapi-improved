@@ -9,6 +9,7 @@
         "music": "JAKIDEKAPI | musik",
         "video": "JAKIDEKAPI | video",
         "projects": "JAKIDEKAPI | proyek",
+        "announce": "JAKIDEKAPI | pengumuman",
         "about": "JAKIDEKAPI | tentang"
     },
 
@@ -21,6 +22,7 @@
         "music": "musik",
         "video": "video",
         "projects": "proyek",
+        "announce": "pemgumuman",
         "about": "tentang"
     },
 
@@ -29,7 +31,7 @@
         "titlelanjutan": "Akhmad Zaky Maulana",
 
         "subtitle": "dan ini adalah portofolio ku.",
-        "content": "Aku adalah seniman, musisi, fotografer, dan siswa di SMK Al-Muhtadin.",
+        "content": "Kadang aku seniman, kadang aku musisi, dan kadang aku fotografer.",
 
         "button": "Tentang ku ->"
     },

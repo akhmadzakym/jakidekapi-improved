@@ -9,6 +9,7 @@
         "music": "JAKIDEKAPI | music",
         "video": "JAKIDEKAPI | video",
         "projects": "JAKIDEKAPI | projects",
+        "announce": "JAKIDEKAPI | announcements",
         "about": "JAKIDEKAPI | about"
     },
 
@@ -21,6 +22,7 @@
         "music": "music",
         "video": "video",
         "projects": "projects",
+        "announce":"announcements",
         "about": "about"
     },
 
@@ -481,6 +483,12 @@
 
         "title2": "...the one who started it all",
         "subtext2": "My early HTML projects that got me into web development. I was 12 years old back then."
+    },
+
+    "announce": {
+      "paragraph1": "'Strawberry Era' is my first ever movie and also my final assignment for my school. It's a documentary about today's youths being called as a 'strawberry generation'. This movie is 99% made by me. Even all of the soundtracks is made by me. Without using any A.I bullsh*t like Suno whatsoever.",
+      "paragraph2": "'If we do not improve and better ourselves, we would truly be crushed like strawberries'",
+      "paragraph3": ""
     },
 
     "about": {
