@@ -33,6 +33,8 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import './App.css'
 
+import { useLanguage } from './context/LanguageContext';
+
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import PageTransition from './components/PageTransition';
@@ -72,8 +74,11 @@ const AnimatedRoutes = () => {
 };
 
 function App() {
+  const { t } = useLanguage();
   return (
     <BrowserRouter>
+    <meta name='keyword' content='jakidekapi, portfolio, art' />
+    <meta name="description" content={t("meta.desc")} />
       <div className='font-display'>
         <NavBar />
         <main><AnimatedRoutes /></main>

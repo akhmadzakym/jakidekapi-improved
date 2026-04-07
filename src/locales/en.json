@@ -1,5 +1,9 @@
 {
-    "title":{
+  "meta":{
+      "desc": "My Portfolio Website."
+  },
+
+  "title":{
         "home": "JAKIDEKAPI | home",
         "digital": "JAKIDEKAPI | digital",
         "traditional": "JAKIDEKAPI | traditional",

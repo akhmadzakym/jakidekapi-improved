@@ -1,4 +1,8 @@
 {
+  "meta":{
+      "desc": "Website Portofolio Saya."
+  },
+
     "title":{
         "home": "JAKIDEKAPI | beranda",
         "digital": "JAKIDEKAPI | digital",
