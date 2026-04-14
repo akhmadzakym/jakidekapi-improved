@@ -94,6 +94,131 @@ const Photo = () => {
       desc: "",
     },
 
+    {
+      src: "/photos/photograp/fauna1.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/fauna2.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/fauna3.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/fauna4.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/fauna5.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/fauna6.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/keran1.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/keran2.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/keran3.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/keran4.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/keran5.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/keran6.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/keran7.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/water1.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/water2.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/water3.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/water4.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/sunflower.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/brodukt1.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/brodukt2.gif",
+      titletext: "",
+      desc: "",
+    },
+
+    {
+      src: "/photos/photograp/assphoto.gif",
+      titletext: "",
+      desc: "",
+    },
   ]
 
   const images1 = [
