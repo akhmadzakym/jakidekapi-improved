@@ -1,4 +1,8 @@
 {
+  "meta":{
+      "desc": "Website Portofolio Saya."
+  },
+
     "title":{
         "home": "JAKIDEKAPI | beranda",
         "digital": "JAKIDEKAPI | digital",
@@ -31,7 +35,7 @@
         "titlelanjutan": "Akhmad Zaky Maulana",
 
         "subtitle": "dan ini adalah portofolio ku.",
-        "content": "Kadang aku seniman, kadang aku musisi, dan kadang aku fotografer.",
+        "content": "Kadang aku seniman, kadang aku desainer grafis, kadang aku musisi, dan kadang aku fotografer.",
 
         "button": "Tentang ku ->"
     },
