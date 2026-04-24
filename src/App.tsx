@@ -77,8 +77,15 @@ function App() {
   const { t } = useLanguage();
   return (
     <BrowserRouter>
-    <meta name='keyword' content='jakidekapi, portfolio, art' />
-    <meta name="description" content={t("meta.desc")} />
+    <head>
+      <meta property='og:type' content='website'></meta>
+      <meta property='og:url' content='https://jakidekapi.netlify.app'></meta>
+      <meta property='og:title' content='JAKIDEKAPI'></meta>
+      <meta property='og:image' content='https://jakidekapi.netlify.app/photos/myself/steve_jobs_from_ohio.gif'></meta>
+      <meta name='title' content='JAKIDEKAPI'></meta>
+      <meta name='keyword' content='jakidekapi, portfolio, art' />
+      <meta name="description" content={t("meta.desc")} />
+    </head>
       <div className='font-display'>
         <NavBar />
         <main><AnimatedRoutes /></main>
