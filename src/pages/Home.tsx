@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useLanguage } from "../context/LanguageContext";
 
+import { useLanguage } from "../context/LanguageContext";
+import OpenGraphMeta from "../components/OpenGraphMeta";
 import PageTransition from "../components/PageTransition";
 
-function Home() {
+const Home: React.FC = () => {
   const { t } = useLanguage();
 
   useEffect(() => {
@@ -15,6 +16,13 @@ function Home() {
   return (
     <PageTransition>
     <div className="font-display">
+      <OpenGraphMeta 
+        title= {t("title.home")}
+        desc= {t("meta.desc")}
+        url= "https://jakidekapi.netlify.app"
+        image= "https://jakidekapi.netlify.app/cards/sharing.png"
+        siteName= "JAKIDEKAPI"
+      />
 
       <div className="xs:ml-5 xs:mr-5 max-sm:ml-5 max-sm:mr-5
                       sm:ml-5 sm:mr-5
@@ -53,6 +61,6 @@ function Home() {
     </div>
     </PageTransition>
   );
-}
+};
 
-export default Home
+export default Home;

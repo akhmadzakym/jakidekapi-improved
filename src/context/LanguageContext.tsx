@@ -31,7 +31,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     for (const k of keys) {
       result = result?.[k];
     }
-    return result || key; // apa itu fallback if missing????
+    return result || key; // fallback if missing????
   };
 
   return (
