@@ -81,7 +81,8 @@ function App() {
       <meta property='og:type' content='website'></meta>
       <meta property='og:url' content='https://jakidekapi.netlify.app'></meta>
       <meta property='og:title' content='JAKIDEKAPI'></meta>
-      <meta property='og:image' content='https://jakidekapi.netlify.app/photos/myself/steve_jobs_from_ohio.gif'></meta>
+      <meta property='og:description' content={t("meta.desc")} />
+      <meta property='og:image' content='https://jakidekapi.netlify.app/public/card/sharing.png'></meta>
       <meta name='title' content='JAKIDEKAPI'></meta>
       <meta name='keyword' content='jakidekapi, portfolio, art' />
       <meta name="description" content={t("meta.desc")} />
