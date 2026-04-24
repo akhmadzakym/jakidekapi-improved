@@ -70,7 +70,7 @@ const Disco: React.FC = () => {
         title= {t("title.home")}
         desc= {t("meta.desc")}
         url= "https://jakidekapi.netlify.app"
-        image= "https://jakidekapi.netlify.app/cards/sharing.png"
+        image= "public/cards/sharing.png"
         siteName= "JAKIDEKAPI"
       />
 
