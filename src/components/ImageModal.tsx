@@ -38,7 +38,7 @@ const ImageModal = ({ src, titletext, desc, onClose }: Props) => {
       
       {/* Modal */}
       <motion.div
-        className="flex flex-row gap-10"
+        className="grid grid-cols-2 gap-10"
         onClick={ (e) => e.stopPropagation() }
         initial={ { scale:0.8, opacity:0 } }
         animate={ { scale:1, opacity:1 } }
@@ -47,7 +47,7 @@ const ImageModal = ({ src, titletext, desc, onClose }: Props) => {
       >
 
       {/* イメージ */}
-      <img src={ src } className="max-w-[90%] max-h-[60%] rounded-xl shadow-xl mt-6 ml-10" />
+      <img src={ src } className="max-w-full max-h-full rounded-xl mt-5 mb-5 mr-5" />
 
       <motion.div
         className="flex flex-col"
