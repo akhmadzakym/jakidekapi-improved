@@ -35,12 +35,13 @@
 // AND I FUCKING HATE IT
 // IT FEELS LIKE I'M A PIECE OF SHIT
 
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+
 import { useLanguage } from "../context/LanguageContext";
-
 import PageTransition from "../components/PageTransition";
+import OpenGraphMeta from "../components/OpenGraphMeta";
 
-  // list of Bandcamp embed URLs (easier to maintain)
+  // Embed Bandcamp sampah (musik gw sampah semua, ngapain ya gw buat musik?)
   const embeds = [
     "https://bandcamp.com/EmbeddedPlayer/album=1651332226/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/album=355229537/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/",
@@ -53,7 +54,7 @@ import PageTransition from "../components/PageTransition";
     "https://bandcamp.com/EmbeddedPlayer/album=670240320/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/",
     ];
 
-const Disco = () => {
+const Disco: React.FC = () => {
     const { t } =  useLanguage();
 
       useEffect(() => {
@@ -65,6 +66,13 @@ const Disco = () => {
     <PageTransition>
     <div className="max-sm:mx-5 xs:mx-5 md:mx-10">
       <p className="md:text-5xl xs:text-3xl mb-5">{t("disco.title")}</p>
+      <OpenGraphMeta 
+        title= {t("title.home")}
+        desc= {t("meta.desc")}
+        url= "https://jakidekapi.netlify.app"
+        image= "public/cards/sharing.png"
+        siteName= "JAKIDEKAPI"
+      />
 
       {/* Responsive Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
