@@ -104,7 +104,7 @@ const GraDsign = () => {
         title= {t("title.home")}
         desc= {t("meta.desc")}
         url= "https://jakidekapi.netlify.app"
-        image= "public/cards/sharing.png"
+        image= "https://jakidekapi.netlify.app/card/sharing.png"
         siteName= "JAKIDEKAPI"
       />
 
