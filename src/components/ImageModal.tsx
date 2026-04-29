@@ -4,12 +4,10 @@ import { X } from "lucide-react";
 
 interface Props {
   src: string;
-  titletext: string;
-  desc?: string;
   onClose: () => void;
 }
 
-const ImageModal = ({ src, titletext, desc, onClose }: Props) => {
+const ImageModal = ({ src, onClose }: Props) => {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -23,7 +21,7 @@ const ImageModal = ({ src, titletext, desc, onClose }: Props) => {
   return (
     <AnimatePresence>
       <motion.div
-          className="fixed inset-0 bg-ctp-mantle/90 backdrop-blur-xs flex justify-center z-50"
+          className="fixed inset-0 bg-ctp-mantle/60 flex justify-center items-start z-50 py-10 overflow-y-auto"
           onClick={ onClose }
           initial={ { opacity: 0 } }
           animate={ { opacity:1 } }
@@ -36,44 +34,8 @@ const ImageModal = ({ src, titletext, desc, onClose }: Props) => {
         <X className="w-6 h-6" />
       </button>
       
-      {/* Modal */}
-      <motion.div
-        className="grid grid-cols-2 gap-10"
-        onClick={ (e) => e.stopPropagation() }
-        initial={ { scale:0.8, opacity:0 } }
-        animate={ { scale:1, opacity:1 } }
-        exit={ { scale:0.85, opacity:0 } }
-        transition={ {type:"spring", stiffness: 200, damping: 20 } }
-      >
-
       {/* イメージ */}
-      <img src={ src } className="max-w-full max-h-full rounded-xl mt-5 mb-5 mr-5" />
-
-      <motion.div
-        className="flex flex-col"
-        onClick={ (e) => e.stopPropagation() }
-        initial={ { scale:0.8, opacity:0 } }
-        animate={ { scale:1, opacity:1 } }
-        exit={ { scale:0.85, opacity:0 } }
-        transition={ {type:"spring", stiffness: 200, damping: 20 } }
-      >
-
-      { /* titel */ }
-      { titletext && ( 
-        <p className="text-ctp-text text-5xl text-left mt-10 mb-10">
-          { titletext }
-        </p>
-        
-      )}
-
-      {/* dekripton */}
-      { desc && (
-        <p className="text-ctp-text text-left mt-4 text-2xl mr-20">
-        { desc }
-        </p>
-      )}
-        </motion.div>
-      </motion.div>
+      <motion.img src={ src } className="w-auto min-w-[40vw] max-w-[90vw] rounded-xl" onClick={(e) => e.stopPropagation()} initial={{scale:0.8, opacity: 0}} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.85, opacity: 0 }} transition={{ type: "spring", stiffness: 200, damping: 20 }} />
     </motion.div>
     </AnimatePresence>
     // <div className="fixed inset-0 bg-ctp-mantle flex itens-center justify-center z-50" onClick={onClose}>

@@ -7,175 +7,119 @@ import PageTransition from "../components/PageTransition";
 
 const DigitalArt = () => {
   const { t } = useLanguage();
-  const [modalData, setModalData] = useState<{ src: string; titletext: string; desc: string } | null>(null);
+  const [modalData, setModalData] = useState<{ src: string;} | null>(null);
 
   const images = [
     {
       src: "/photos/digita/yumenosekai_fainaru.gif",
-      titletext: "digital.yumenosekai_fainaru.titletext",
-      desc: "digital.yumenosekai_fainaru.desc",
     },
 
     {
       src: "/photos/digita/spcbi.gif",
-      titletext: "digital.spcbi.titletext",
-      desc: "digital.spcbi.desc",
     },
 
     {
       src: "/photos/digita/kle.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/selfport.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/jaki.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/saya-sendiri_1.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/export202401081434415690.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/artblock1.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/idkbro.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/strboenstr2.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/ikari.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/cat_resized.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/FROG_RESIZED.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/BZZZT_RESIZED.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/THE_SHENANIGANS_RESIZED.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/untitled-something.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled189.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled190.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled40.png",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled228.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/Artboard 1.png",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/desktopa.png",
-      titletext: "Multiply (2023)",
-      desc: "Abstract art that has no meaning.",
     },
 
     {
       src: "/photos/digita/Artboard 1a.png",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled38.png",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled39.png",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled42.png",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled78.png",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/digita/Untitled46.png",
-      titletext: "",
-      desc: "",
     },
   ];
 
@@ -198,7 +142,7 @@ const DigitalArt = () => {
       ))}
 
       {modalData && (
-        <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
+        <ImageModal src={modalData.src} onClose={() => setModalData(null)} />
       )}
     </div>
     </PageTransition>

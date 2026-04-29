@@ -7,115 +7,81 @@ import PageTransition from "../components/PageTransition";
 
 const TradArt = () => {
   const { t } = useLanguage();
-    const [modalData, setModalData] = useState<{src:string; titletext:string; desc: string} | null>(null);
+    const [modalData, setModalData] = useState<{src:string;} | null>(null);
 
     const images = [
       {
         // Oenyglkos Vasarnap
         src: "/photos/traditional/IMG_011.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         // Mysterious Girl that I drew on middle school but i decided to remake it.
         src: "/photos/traditional/mysgrl.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         // Felis Catus.
         src: "/photos/traditional/taxidermy_cat.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         // 
         src: "/photos/traditional/Untilted-2.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/skndchns.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/jxtadc.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/KAKENROOKEN_STIVLOBITS.GIF",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/sunsetz.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/whoisthispersonthatiamdrawingidontknowhimforsureandidontknowwhyidrewhim.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/blood.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/boy.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/m.gif",
-        titletext: "",
-        desc: "",
       },
     ];
 
     const images1 = [
       {
         src: "/photos/traditional/A_C_ORJ.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/A_C_PZZ.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/A_C_ORR.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/reppdots.gif",
-        titletext: "",
-        desc: "",
       },
 
       {
         src: "/photos/traditional/IMG_010.gif",
-        titletext: "",
-        desc: "",
       },
 
     ];
@@ -142,7 +108,7 @@ const TradArt = () => {
       ))}
 
       {modalData && (
-        <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
+        <ImageModal src={modalData.src} onClose={() => setModalData(null)} />
       )}
       </div>
 
@@ -159,7 +125,7 @@ const TradArt = () => {
       ))}
 
       {modalData && (
-        <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
+        <ImageModal src={modalData.src} onClose={() => setModalData(null)} />
       )}
       </div>
     </div>

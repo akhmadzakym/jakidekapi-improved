@@ -7,291 +7,197 @@ import PageTransition from "../components/PageTransition";
 
 const Photo = () => {
   const { t } = useLanguage();
-  const [modalData, setModalData] = useState<{ src: string; titletext: string; desc: string } | null>(null);
+  const [modalData, setModalData] = useState<{ src: string;} | null>(null);
 
   const images = [
     {
       src: "/photos/photograp/IMG_4153.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/1.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/2.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/3.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/4.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/5.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/6.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/7.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/8.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/9.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/10.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/11.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/12.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/13.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/fauna1.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/fauna2.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/fauna3.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/fauna4.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/fauna5.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/fauna6.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/keran1.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/keran2.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/keran3.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/keran4.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/keran5.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/keran6.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/keran7.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/water1.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/water2.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/water3.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/water4.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/sunflower.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/brodukt1.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/brodukt2.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/assphoto.gif",
-      titletext: "",
-      desc: "",
     },
   ]
 
   const images1 = [
     {
       src: "/photos/photograp/20230122_123917.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/LRM_20230718_161920.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/LRM_20230718_162037-(1).gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/LRM_20230718_162048-(1).gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/20250103_070841.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/20250103_070926.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/20250103_074422.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/20250103_070015.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/20221028_190445.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/20221120_054028.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/mtmerapi.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/photograp/pemecahombak.gif",
-      titletext: "",
-      desc: "",
     },
 
   ]
@@ -317,7 +223,7 @@ const Photo = () => {
         ))}
 
         {modalData && (
-          <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
+          <ImageModal src={modalData.src} onClose={() => setModalData(null)} />
         )}
       </div>
 
@@ -334,7 +240,7 @@ const Photo = () => {
         ))}
 
         {modalData && (
-          <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
+          <ImageModal src={modalData.src} onClose={() => setModalData(null)} />
         )}
       </div>
     </div>

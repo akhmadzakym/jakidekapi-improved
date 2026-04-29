@@ -7,37 +7,27 @@ import PageTransition from "../components/PageTransition";
 
 const GraDsign = () => {
   const { t } = useLanguage();
-  const [modalData, setModalData] = useState<{ src: string; titletext: string; desc: string } | null>(null);
+  const [modalData, setModalData] = useState<{ src: string;} | null>(null);
 
   const images = [
     {
       src: "/photos/gradsign/AE_SIGN_POSTER.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/gradsign/AE_PLUS_POSTER.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/gradsign/it's-music-to-my-ears.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/gradsign/oneohtrix-point-never.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/gradsign/secrr.gif",
-      titletext: "",
-      desc: "",
     },
 
   ];
@@ -45,48 +35,32 @@ const GraDsign = () => {
   const images1 = [
     {
       src: "/photos/gradsign/CATALOGUE.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/gradsign/ulangan-poster-promosi-ppdb.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/gradsign/Mockup_A4_Brochure_1.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/gradsign/Mockup_A4_Brochure_2.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/gradsign/Mockup_A4_Brochure_5.gif",
-      titletext: "",
-      desc: "",
     },
 
     {
       src: "/photos/gradsign/HOGGIES DOGGIES-01.jpg",
-      titletext: "",
-      desc: "",
     },
     {
       src: "/photos/gradsign/Artboard 1a.png",
-      titletext: "",
-      desc: "",
     },
     {
       src: "/photos/gradsign/READYROOOOOOOO-VER2.gif",
-      titletext: "",
-      desc: "",
     },
 
   ];
@@ -112,7 +86,7 @@ const GraDsign = () => {
         ))}
 
         {modalData && (
-          <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
+          <ImageModal src={modalData.src} onClose={() => setModalData(null)} />
         )}
       </div>
 
@@ -128,7 +102,7 @@ const GraDsign = () => {
         ))}
 
         {modalData && (
-          <ImageModal src={modalData.src} titletext={t(modalData.titletext)} desc={t(modalData.desc)} onClose={() => setModalData(null)} />
+          <ImageModal src={modalData.src} onClose={() => setModalData(null)} />
         )}
       </div>
     </div>
