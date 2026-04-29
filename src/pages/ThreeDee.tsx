@@ -4,9 +4,8 @@ import { useState } from "react";
 import ImageModal from "../components/ImageModal";
 import { useLanguage } from "../context/LanguageContext";
 import PageTransition from "../components/PageTransition";
-import OpenGraphMeta from "../components/OpenGraphMeta";
 
-const ThreeDee: React.FC = () => {
+const ThreeDee = () => {
     const { t } =  useLanguage();
     const [modalData, setModalData] = useState<{src:string; titletext:string; desc: string} | null>(null);
 
@@ -42,16 +41,7 @@ const ThreeDee: React.FC = () => {
                         xs:ml-5 xs:mr-5
                         columns-1 gap-3
                         sm:columns-2 md:columns-3 lg:columns-3
-                        [&>img:not(:first-child)]:mt-3"> 
-                        
-        <OpenGraphMeta 
-          title= {t("title.home")}
-          desc= {t("meta.desc")}
-          url= "https://jakidekapi.netlify.app"
-          image= "https://jakidekapi.netlify.app/card/sharing.png"
-          siteName= "JAKIDEKAPI"
-        />
-  
+                        [&>img:not(:first-child)]:mt-3">  
         {images.map((img, index) => (
         <img key={index} src={img.src} className="rounded-2xl cursor-pointer transition hover:opacity-80" onClick={() => setModalData(img)} />
       ))}

@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 
 import { useLanguage } from "../context/LanguageContext";
-import OpenGraphMeta from "../components/OpenGraphMeta";
 import PageTransition from "../components/PageTransition";
 
-const Video: React.FC = () => {
+const Video = () => {
     const { t } =  useLanguage();
 
       useEffect(() => {
@@ -19,13 +18,6 @@ const Video: React.FC = () => {
 
   return (
     <PageTransition>
-      <OpenGraphMeta
-        title= {t("title.home")}
-        desc= {t("meta.desc")}
-        url= "https://jakidekapi.netlify.app"
-        image= "https://jakidekapi.netlify.app/card/sharing.png"
-        siteName= "JAKIDEKAPI"
-      />
     <div className="max-sm:mx-5 md:mx-10 xs:mx-5 flex flex-col gap-6">
       {videos.map((video, idx) => (
         <div key={idx} className="relative w-full aspect-video overflow-hidden">

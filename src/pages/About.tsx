@@ -1,11 +1,9 @@
 import { useEffect } from "react";
+
 import { useLanguage } from "../context/LanguageContext";
-
 import PageTransition from "../components/PageTransition";
-import OpenGraphMeta from "../components/OpenGraphMeta";
 
-
-const About: React.FC = () => {
+const About = () => {
   const { t } = useLanguage();
 
   useEffect(() => {
@@ -21,14 +19,6 @@ const About: React.FC = () => {
                     md:ml-10 md:mr-10
                     lg:ml-10 lg:mr-10
                     grid lg:grid-cols-2 gap-10 sm:grid-cols-1 md:grid-cols-2">
-      <OpenGraphMeta 
-        title= {t("title.home")}
-        desc= {t("meta.desc")}
-        url= "https://jakidekapi.netlify.app"
-        image= "https://jakidekapi.netlify.app/card/sharing.png"
-        siteName= "JAKIDEKAPI"
-      />
-
       <div>
         <img className="rounded-2xl" src="/photos/myself/steve_jobs_from_ohio.gif"></img>
         <p className="text-xs mt-3 text-ctp-subtext0">{t("about.credits")}</p>

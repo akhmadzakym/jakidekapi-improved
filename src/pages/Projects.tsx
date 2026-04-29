@@ -2,9 +2,8 @@ import { useEffect } from "react";
 
 import { useLanguage } from "../context/LanguageContext";
 import PageTransition from "../components/PageTransition"
-import OpenGraphMeta from "../components/OpenGraphMeta";
 
-const Projects: React.FC = () => {
+const Projects = () => {
   const { t } = useLanguage();
 
   const projects_website = [
@@ -68,14 +67,6 @@ const Projects: React.FC = () => {
                     sm:ml-5 sm:mr-5
                     md:ml-10 md:mr-10
                     lg:ml-10 lg:mr-10 space-y-10">
-            <OpenGraphMeta 
-              title= {t("title.home")}
-              desc= {t("meta.desc")}
-              url= "https://jakidekapi.netlify.app"
-              image= "https://jakidekapi.netlify.app/card/sharing.png"
-              siteName= "JAKIDEKAPI"
-            />
-
           <div className="text-5xl font-bold">
           <h1>{t("projects.title1")}</h1>
         </div>

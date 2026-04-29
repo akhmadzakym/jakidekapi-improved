@@ -4,7 +4,6 @@ import { useState } from "react";
 import ImageModal from "../components/ImageModal";
 import { useLanguage } from "../context/LanguageContext";
 import PageTransition from "../components/PageTransition";
-import OpenGraphMeta from "../components/OpenGraphMeta";
 
 const Photo = () => {
   const { t } = useLanguage();
@@ -306,14 +305,6 @@ const Photo = () => {
   return (
     <PageTransition>
     <div>
-      <OpenGraphMeta 
-        title= {t("title.home")}
-        desc= {t("meta.desc")}
-        url= "https://jakidekapi.netlify.app"
-        image= "https://jakidekapi.netlify.app/card/sharing.png"
-        siteName= "JAKIDEKAPI"
-      />
-
       <h1 className="text-5xl text-center max-sm:ml-5 mt-10 mb-10 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5">Using DSLR</h1>
       <div className="max-sm:ml-5 max-sm:mr-5
                         md:ml-10 md:mr-10
