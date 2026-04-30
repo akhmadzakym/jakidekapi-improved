@@ -1,4 +1,5 @@
 import LangSwitcher from "./LangSwitch";
+import OleSwitcheroo from "./OleSwitcheroo";
 
 const Footer = () => {
   return (
@@ -24,6 +25,10 @@ const Footer = () => {
             <div className="grid grid-cols-2 gap-3">
                 <p className="text-right self-center max-sm:text-xs">Change Language:</p>
                 <LangSwitcher />
+            </div>
+            <div className="md:hidden grid grid-cols-2 gap-3 mt-3">
+                <p className="text-right self-center max-sm:text-xs">Change Theme:</p>
+                <OleSwitcheroo />
             </div>
         </div>
       </div>

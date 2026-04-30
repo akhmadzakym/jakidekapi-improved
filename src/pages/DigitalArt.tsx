@@ -23,6 +23,14 @@ const DigitalArt = () => {
     },
 
     {
+      src: "/photos/digita/INTOTHEUNKNOWN_ANJA.png",
+    },
+
+    {
+      src: "/photos/digita/INTOTHEUNKNOWN_TOBY.png",
+    },
+
+    {
       src: "/photos/digita/selfport.gif",
     },
 

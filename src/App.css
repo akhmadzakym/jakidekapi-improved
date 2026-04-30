@@ -7,6 +7,9 @@
 	--breakpoint-xs: 30rem;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant frappe (&:where(.frappe, .frappe *));
+
 @font-face {
 	font-family: 'Iosevka Web';
 	font-display: swap;

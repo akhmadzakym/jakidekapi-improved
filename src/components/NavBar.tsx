@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import siGithub  from "@icons-pack/react-simple-icons";
 
 import { useLanguage } from "../context/LanguageContext";
+import OleSwitcheroo from "./OleSwitcheroo";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +14,7 @@ const NavBar = () => {
   const { t } = useLanguage();
 
   return (
-    <nav className="flex items-center justify-between 
+    <nav className="flex items-center justify-between
                     md:mt-5 md:mb-10 md:mx-10
                     xs:mt-5 xs:mb-10 xs:mx-5
                     max-sm:mt-5 max-sm:mb-10 max-sm:mx-5">
@@ -28,7 +30,7 @@ const NavBar = () => {
       </Link>
 
       {/* Desktop Links */}
-      <div className="hidden md:flex gap-5 content-center" >
+      <div className="hidden md:flex gap-5 content-center justify-end">
         <Link to="/digital" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.digital")}</Link>
         <Link to="/traditional" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.traditional")}</Link>
         <Link to="/graphic" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.graphic_design")}</Link>
@@ -40,6 +42,18 @@ const NavBar = () => {
         <Link to="/announce" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.announce")}</Link>
         <Link to="/about" className="font-light transition-all hover:font-bold hover:text-3xl">{t("navbar.about")}</Link>
       </div>
+
+    <div className="flex justify-end items-center">
+        <div className="hidden md:block">
+          <OleSwitcheroo />
+        </div>
+
+      <div className="hidden md:block ml-5">
+          <a href="https://github.com/akhmadzakym/jakidekapi-improved">
+            <siGithub />
+          </a>
+      </div>
+    </div>
 
       {/* Hamburger Button */}
       <button

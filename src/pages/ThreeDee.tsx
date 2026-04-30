@@ -21,6 +21,26 @@ const ThreeDee = () => {
       {
         src: "/photos/3d/res.gif",
       },
+
+      {
+        src: "/photos/3d/1.png",
+      },
+
+      {
+        src: "/photos/3d/2.png",
+      },
+
+      {
+        src: "/photos/3d/3.png",
+      },
+
+      {
+        src: "/photos/3d/4.png",
+      },
+
+      {
+        src: "/photos/3d/5.png",
+      }
     ];
 
       useEffect(() => {
