@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Menu, X} from "lucide-react";
+import { LucideGithub, Menu, X} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import siGithub  from "@icons-pack/react-simple-icons";
 
 import { useLanguage } from "../context/LanguageContext";
 import OleSwitcheroo from "./OleSwitcheroo";
@@ -49,8 +48,8 @@ const NavBar = () => {
         </div>
 
       <div className="hidden md:block ml-5">
-          <a href="https://github.com/akhmadzakym/jakidekapi-improved">
-            <siGithub />
+          <a href="https://github.com/akhmadzakym/jakidekapi-improved" target="_blank">
+            <LucideGithub />
           </a>
       </div>
     </div>
@@ -82,6 +81,7 @@ const NavBar = () => {
             <Link to="/projects" onClick={toggleMenu}>{t("navbar.projects")}</Link>
             <Link to="/announce" onClick={toggleMenu}>{t("navbar.announce")}</Link>
             <Link to="/about" onClick={toggleMenu}>{t("navbar.about")}</Link>
+            <a href="https://github.com/akhmadzakym/jakidekapi-improved/" target="_blank">github</a>
           </motion.div>
         )}
       </AnimatePresence>
