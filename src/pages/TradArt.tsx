@@ -11,22 +11,18 @@ const TradArt = () => {
 
     const images = [
       {
-        // Oenyglkos Vasarnap
         src: "/photos/traditional/IMG_011.gif",
       },
 
       {
-        // Mysterious Girl that I drew on middle school but i decided to remake it.
         src: "/photos/traditional/mysgrl.gif",
       },
 
       {
-        // Felis Catus.
         src: "/photos/traditional/taxidermy_cat.gif",
       },
 
       {
-        // 
         src: "/photos/traditional/Untilted-2.gif",
       },
 
@@ -94,35 +90,22 @@ const TradArt = () => {
   return (
     <PageTransition>
     <div>
-
       <h1 className="text-5xl text-center max-sm:ml-5 mt-10 mb-10 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5">Personal Works</h1>
-      <div className="max-sm:ml-5 max-sm:mr-5
-                        md:ml-10 md:mr-10
-                        xs:ml-5 xs:mr-5
-                        columns-1 gap-3
-                        sm:columns-2 md:columns-3 lg:columns-3
-                        [&>img:not(:first-child)]:mt-3">
-
-      {images.map((img, index) => (
-        <img key={index} src={img.src} className="rounded-2xl cursor-pointer transition hover:opacity-80" onClick={() => setModalData(img)} />
-      ))}
-
-      {modalData && (
-        <ImageModal src={modalData.src} onClose={() => setModalData(null)} />
-      )}
-      </div>
+        <div className="max-sm:ml-5 max-sm:mr-5 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5 columns-1 gap-3 sm:columns-2 md:columns-3 lg:columns-4">
+            {images.map((img, index) => (
+              <div key={index} className="mb-3 break-inside-avoid cursor-pointer" onClick={() => setModalData(img)}>
+                <img src={img.src} className="w-full rounded-2xl transition hover:opactity-80" />
+              </div>
+            ))}
+        </div>
 
       <h1 className="text-5xl text-center max-sm:ml-5 mt-10 mb-10 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5">School Assignments</h1>
-      <div className="max-sm:ml-5 max-sm:mr-5
-                        md:ml-10 md:mr-10
-                        xs:ml-5 xs:mr-5
-                        columns-1 gap-3
-                        sm:columns-2 md:columns-3 lg:columns-3
-                        [&>img:not(:first-child)]:mt-3">
-        
-      {images1.map((img, index) => (
-        <img key={index} src={img.src} className="rounded-2xl cursor-pointer transition hover:opacity-80" onClick={() => setModalData(img)} />
-      ))}
+        <div className="max-sm:ml-5 max-sm:mr-5 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5 columns-1 gap-3 sm:columns-2 md:columns-3 lg:columns-4">
+            {images1.map((img, index) => (
+              <div key={index} className="mb-3 break-inside-avoid cursor-pointer" onClick={() => setModalData(img)}>
+                <img src={img.src} className="w-full rounded-2xl transition hover:opactity-80" />
+              </div>
+            ))}
 
       {modalData && (
         <ImageModal src={modalData.src} onClose={() => setModalData(null)} />

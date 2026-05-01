@@ -7,7 +7,7 @@ import PageTransition from "../components/PageTransition";
 
 const GraDsign = () => {
   const { t } = useLanguage();
-  const [modalData, setModalData] = useState<{ src: string;} | null>(null);
+  const [modalData, setModalData] = useState<{ src: string; } | null>(null);
 
   const images = [
     {
@@ -65,6 +65,25 @@ const GraDsign = () => {
 
   ];
 
+  const images2 = [
+    {
+      src: "/photos/gradsign/Tahun Baru Hijriyah (27 Juni 2025).png",
+    },
+
+
+    {
+      src: "/photos/gradsign/Hari Anak Nasional (23 Juli 2025).png",
+    },
+
+    {
+      src: "/photos/gradsign/Hari Kemerdekaan Indonesia (17 Agustus 2025).png",
+    },
+
+    {
+      src: "/photos/gradsign/Maulid Nabi Muhammad (05 September 2025).png",
+    },
+  ]
+
   useEffect(() => {
     document.title = t("title.graphic_design");
   }, [t]
@@ -72,41 +91,39 @@ const GraDsign = () => {
 
   return (
     <PageTransition>
-    <div>
-      <h1 className="text-5xl text-center max-sm:ml-5 mt-10 mb-10 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5">Personal Works</h1>
-      <div className="max-sm:ml-5 max-sm:mr-5
-                        md:ml-10 md:mr-10
-                        xs:ml-5 xs:mr-5
-                        columns-1 gap-3
-                        sm:columns-2 md:columns-3 lg:columns-3
-                        [&>img:not(:first-child)]:mt-3">
+      <div>
+        <h1 className="text-5xl text-center max-sm:ml-5 mt-10 mb-10 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5">Personal Works</h1>
+          <div className="max-sm:ml-5 max-sm:mr-5 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5 columns-1 gap-3 sm:columns-2 md:columns-3 lg:columns-3">
+            {images.map((img, index) => (
+              <div key={index} className="mb-3 break-inside-avoid cursor-pointer" onClick={() => setModalData(img)}>
+                <img src={img.src} className="w-full rounded-2xl transition hover:opactity-80" />
+              </div>
+            ))}
+          </div>
 
-        {images.map((img, index) => (
-          <img key={index} src={img.src} className="rounded-2xl cursor-pointer transition hover:opacity-80" onClick={() => setModalData(img)} />
-        ))}
+        <h1 className="text-5xl text-center max-sm:ml-5 mt-10 mb-10 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5">School Assignments</h1>
+          <div className="max-sm:ml-5 max-sm:mr-5 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5 columns-1 gap-3 sm:columns-2 md:columns-3 lg:columns-3">
+            {images1.map((img, index) => (
+              <div key={index} className="mb-3 break-inside-avoid cursor-pointer" onClick={() => setModalData(img)}>
+                <img src={img.src} className="w-full rounded-2xl transition hover:opactity-80" />
+              </div>
+            ))}
+          </div>
 
-        {modalData && (
-          <ImageModal src={modalData.src} onClose={() => setModalData(null)} />
-        )}
+        <h1 className="text-5xl text-center max-sm:ml-5 mt-10 mb-10 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5">Praktik Kerja Lapangan</h1>
+          <div className="max-sm:ml-5 max-sm:mr-5 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5 columns-1 gap-3 sm:columns-2 md:columns-3 lg:columns-4">
+            {images2.map((img, index) => (
+              <div key={index} className="mb-3 break-inside-avoid cursor-pointer" onClick={() => setModalData(img)}>
+                <img src={img.src} className="w-full rounded-2xl transition hover:opactity-80" />
+              </div>
+            ))}
+
+            {modalData && (
+              <ImageModal src={modalData.src} onClose={() => setModalData(null)} />
+            )}
+          </div>
       </div>
-
-      <h1 className="text-5xl text-center max-sm:ml-5 mt-10 mb-10 md:ml-10 md:mr-10 xs:ml-5 xs:mr-5">School Assignments</h1>
-      <div className="max-sm:ml-5 max-sm:mr-5
-                        md:ml-10 md:mr-10
-                        xs:ml-5 xs:mr-5
-                        columns-1 gap-3
-                        sm:columns-2 md:columns-3 lg:columns-3
-                        [&>img:not(:first-child)]:mt-3">
-        {images1.map((img, index) => (
-          <img key={index} src={img.src} className="rounded-2xl cursor-pointer transition hover:opacity-80" onClick={() => setModalData(img)} />
-        ))}
-
-        {modalData && (
-          <ImageModal src={modalData.src} onClose={() => setModalData(null)} />
-        )}
-      </div>
-    </div>
-  </PageTransition>
+    </PageTransition>
   );
 }
 
