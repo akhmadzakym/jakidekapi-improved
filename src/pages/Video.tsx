@@ -12,7 +12,7 @@ const Video = () => {
     );
 
   const videos = [
-    { id: "CWHXb7S4AHw", title: "Man" },
+    // { id: "CWHXb7S4AHw", title: "Man" },
     { id: "DugDkLWyfqU", title: "broktin - elektrionk" },
   ];
 

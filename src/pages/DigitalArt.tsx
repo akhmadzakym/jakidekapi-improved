@@ -42,21 +42,21 @@ const DigitalArt = () => {
       src: "/photos/digita/saya-sendiri_1.gif",
     },
 
-    {
-      src: "/photos/digita/export202401081434415690.gif",
-    },
+    // {
+    //   src: "/photos/digita/export202401081434415690.gif",
+    // },
 
     {
       src: "/photos/digita/artblock1.gif",
     },
 
-    {
-      src: "/photos/digita/idkbro.gif",
-    },
+    // {
+    //   src: "/photos/digita/idkbro.gif",
+    // },
 
-    {
-      src: "/photos/digita/strboenstr2.gif",
-    },
+    // {
+    //   src: "/photos/digita/strboenstr2.gif",
+    // },
 
     {
       src: "/photos/digita/ikari.gif",
@@ -78,9 +78,9 @@ const DigitalArt = () => {
       src: "/photos/digita/THE_SHENANIGANS_RESIZED.gif",
     },
 
-    {
-      src: "/photos/digita/untitled-something.gif",
-    },
+    // {
+    //   src: "/photos/digita/untitled-something.gif",
+    // },
 
     {
       src: "/photos/digita/Untitled189.gif",
@@ -90,45 +90,45 @@ const DigitalArt = () => {
       src: "/photos/digita/Untitled190.gif",
     },
 
-    {
-      src: "/photos/digita/Untitled40.png",
-    },
+    // {
+    //   src: "/photos/digita/Untitled40.png",
+    // },
 
-    {
-      src: "/photos/digita/Untitled228.gif",
-    },
+    // {
+    //   src: "/photos/digita/Untitled228.gif",
+    // },
 
-    {
-      src: "/photos/digita/Artboard 1.png",
-    },
+    // {
+    //   src: "/photos/digita/Artboard 1.png",
+    // },
 
-    {
-      src: "/photos/digita/desktopa.png",
-    },
+    // {
+    //   src: "/photos/digita/desktopa.png",
+    // },
 
-    {
-      src: "/photos/digita/Artboard 1a.png",
-    },
+    // {
+    //   src: "/photos/digita/Artboard 1a.png",
+    // },
 
-    {
-      src: "/photos/digita/Untitled38.png",
-    },
+    // {
+    //   src: "/photos/digita/Untitled38.png",
+    // },
 
-    {
-      src: "/photos/digita/Untitled39.png",
-    },
+    // {
+    //   src: "/photos/digita/Untitled39.png",
+    // },
 
-    {
-      src: "/photos/digita/Untitled42.png",
-    },
+    // {
+    //   src: "/photos/digita/Untitled42.png",
+    // },
 
-    {
-      src: "/photos/digita/Untitled78.png",
-    },
+    // {
+    //   src: "/photos/digita/Untitled78.png",
+    // },
 
-    {
-      src: "/photos/digita/Untitled46.png",
-    },
+    // {
+    //   src: "/photos/digita/Untitled46.png",
+    // },
   ];
 
   useEffect(() => {
