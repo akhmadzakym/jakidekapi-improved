@@ -15,6 +15,7 @@ import PageTransition from "../components/PageTransition";
   const embeds = [
     "https://bandcamp.com/EmbeddedPlayer/album=1651332226/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/album=355229537/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/",
+    "https://bandcamp.com/EmbeddedPlayer/album=1570861712/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/album=4195841262/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/album=1830780947/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/",
     "https://bandcamp.com/EmbeddedPlayer/album=4206725470/size=large/bgcol=333333/linkcol=0687f5/minimal=true/transparent=true/",

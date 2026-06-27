@@ -22,13 +22,13 @@ const TradArt = () => {
         src: "/photos/traditional/taxidermy_cat.gif",
       },
 
-      {
-        src: "/photos/traditional/Untilted-2.gif",
-      },
+      // {
+      //   src: "/photos/traditional/Untilted-2.gif",
+      // },
 
-      {
-        src: "/photos/traditional/skndchns.gif",
-      },
+      // {
+      //   src: "/photos/traditional/skndchns.gif",
+      // },
 
       {
         src: "/photos/traditional/jxtadc.gif",

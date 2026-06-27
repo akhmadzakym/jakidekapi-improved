@@ -22,13 +22,13 @@ const GraDsign = () => {
       src: "/photos/gradsign/it's-music-to-my-ears.gif",
     },
 
-    {
-      src: "/photos/gradsign/oneohtrix-point-never.gif",
-    },
+    // {
+    //   src: "/photos/gradsign/oneohtrix-point-never.gif",
+    // },
 
-    {
-      src: "/photos/gradsign/secrr.gif",
-    },
+    // {
+    //   src: "/photos/gradsign/secrr.gif",
+    // },
 
   ];
 
