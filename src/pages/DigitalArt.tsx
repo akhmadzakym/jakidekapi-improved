@@ -31,6 +31,18 @@ const DigitalArt = () => {
     },
 
     {
+      src: "/photos/digita/toby's-room-revised.gif",
+    },
+
+    {
+      src: "/photos/digita/latihan_onepointperspective.gif",
+    },
+
+    {
+      src: "public/photos/digita/lukas-FILE-NGECRASH_rev2.gif",
+    },
+
+    {
       src: "/photos/digita/selfport.gif",
     },
 
