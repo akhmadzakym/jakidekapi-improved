@@ -39,7 +39,7 @@ const DigitalArt = () => {
     },
 
     {
-      src: "public/photos/digita/lukas-FILE-NGECRASH_rev2.gif",
+      src: "/photos/digita/lukas-FILE-NGECRASH_rev2.gif",
     },
 
     {
