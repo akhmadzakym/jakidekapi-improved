@@ -23,7 +23,7 @@ const Home: React.FC = () => {
         { /*CHROME BIKIN MASALAH TERUS ANJING :( THAT'S WHY I USE FIREFOX*/}
 
         <div className="max-sm:block xs:block sm:block md:hidden lg:hidden">
-          <img className="rounded-2xl" src="/photos/myself/steve_jobs_from_ohio.gif"></img>
+          <img className="rounded-2xl" src="/photos/myself/portrait1.jpg"></img>
         </div>
 
         <div className="content-center">
@@ -46,7 +46,7 @@ const Home: React.FC = () => {
           </PageTransition>
         </div>
         <div className="max-sm:hidden xs:hidden sm:hidden md:block lg:block">
-          <img className="rounded-2xl" src="/photos/myself/steve_jobs_from_ohio.gif"></img>
+          <img className="rounded-2xl" src="/photos/myself/portrait1.jpg"></img>
         </div>
       </div>
     </div>
