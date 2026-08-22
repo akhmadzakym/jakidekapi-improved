@@ -43,6 +43,10 @@ const DigitalArt = () => {
     },
 
     {
+      src: "/photos/digita/rayaxatma_ver3.gif"
+    },
+
+    {
       src: "/photos/digita/meettheartist_homophobeversion.gif",
     },
 
